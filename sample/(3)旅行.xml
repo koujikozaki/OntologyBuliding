@@ -1,0 +1,2093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="(3)旅行.xml" ont_id="1222384768528ont" >
+<FILENAME_ONT>(3)旅行.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2289" h="4602" />
+<CONCEPT id="1196706817258_n1" >
+<LABEL>イベント</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="268" y="629"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n3" >
+<LABEL>旅行イベント</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="405" y="490"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196706817258_s4" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s5" 
+ type="NW"  label="slot3"  kind="p/o"  num="1"  role="参加期間"  class_constraint="期間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="期間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s6" 
+ type="NW"  label="slot2"  kind="p/o"  num="0.."  role="実施行為"  class_constraint="行為"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1196706817258_s7" 
+ type="R2-2"  label="行為:slot"  kind="p/o"  num="1"  role="行為主体"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="行為$slot"/>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s8" 
+ type="R2-2"  label="slot"  kind="a/o"  num="1"  role="実施場所"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="行為$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s9" 
+ type="R2-2"  label="slot2"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="行為$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="行為" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s10" 
+ type="NW"  label="slot4"  kind="p/o"  num="0.."  role="N日目のイベント"  class_constraint="旅行イベント"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1197001850000_s9" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot"/>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s11" 
+ type="R2-2"  label="旅行イベント:slot3"  kind="p/o"  num="1"  role="参加期間"  class_constraint="期間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="期間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="旅行イベント" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s12" 
+ type="NW"  label="slot5"  kind="p/o"  num="1"  role="旅行先"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<DEF>広めの地域で制約する</DEF>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s13" 
+ type="NW"  label="slot6"  kind="p/o"  num="1"  role="発生場所"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<DEF>発生場所の包含関係は？
+→移動を考えると，イベント全体の発生場所は複数箇所となる？
+→サブイベントは，複数箇所のどこかで起こったとするならば，どう書くべきか・・・？
+→サブイベントの発生箇所の「和」が，全体のイベントであると書けばいい？</DEF>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196979042000_s13" 
+ type="NW"  label="slot7"  kind="a/o"  num="1"  role="旅行する国"  class_constraint="国"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196706817258_rc15" label="時間的包含関係" ><POS x="705" y="686"/>
+<ARC label="全期間">旅行イベント$slot3</ARC>
+<ARC label="部分期間">旅行イベント$slot4%旅行イベント:slot3</ARC>
+</R_CONST>
+<R_CONST id="1196706817258_rc16" label="時間的包含関係" ><POS x="723" y="594"/>
+<ARC label="全期間">旅行イベント$slot3</ARC>
+<ARC label="部分期間">旅行イベント$slot2%slot2</ARC>
+</R_CONST>
+<R_CONST id="1196745360000_rc16" label="構成関係" ><POS x="699" y="836"/>
+<ARC label="構成物">旅行イベント$slot2%slot</ARC>
+<ARC label="全体物">旅行イベント$slot6</ARC>
+</R_CONST>
+<R_CONST id="1196979042000_rc18" label="空間的包含関係" ><POS x="663" y="905"/>
+<ARC label="全体空間">旅行イベント$slot6</ARC>
+<ARC label="部分空間">旅行イベント$slot7</ARC>
+</R_CONST>
+<R_CONST id="1197001850000_rc18" label="同じ" ><POS x="688" y="545"/>
+<ARC label="class">旅行イベント$slot</ARC>
+<ARC label="class">旅行イベント$slot2%行為:slot</ARC>
+</R_CONST>
+<R_CONST id="1197001850000_rc19" label="同じ" ><POS x="717" y="773"/>
+<ARC label="class">旅行イベント$slot</ARC>
+<ARC label="class">旅行イベント$slot4%slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n17" >
+<LABEL>行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="264" y="95"/>
+<DEF>状態の変化はまだ書けていない．
+自動詞，他動詞も分けていない</DEF>
+<SLOTS>
+<SLOT id="1196706817258_s18" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="行為主体"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s19" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="実施場所"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s20" 
+ type="NW"  label="slot3"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n19" >
+<LABEL>移動する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="720" y="13"/>
+<SLOTS>
+<SLOT id="1196745360000_s22" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="出発場所"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s23" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="移動先"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s24" 
+ type="NW"  label="slot3"  kind="a/o"  num="1"  role="移動手段"  class_constraint="移動手段"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1197601805409_s28" 
+ type="R1"  label="移動手段:slot5"  kind="a/o"  num="1"  role="出発地"  class_constraint="移動乗り降り施設"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot5"/>
+</SLOT>
+<SLOT id="1197601805409_s29" 
+ type="R1"  label="移動手段:slot6"  kind="a/o"  num="1"  role="到着地"  class_constraint="移動乗り降り施設"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot6"/>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動手段" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196745360000_rc25" label="異なる" ><POS x="942" y="75"/>
+<ARC label="class">移動する$slot</ARC>
+<ARC label="class">移動する$slot2</ARC>
+</R_CONST>
+<R_CONST id="1197601805409_rc31" label="空間的包含関係" ><POS x="977" y="110"/>
+<ARC label="全体空間">移動する$slot</ARC>
+<ARC label="部分空間">移動する$slot3%移動手段:slot5</ARC>
+</R_CONST>
+<R_CONST id="1197601805409_rc32" label="空間的包含関係" ><POS x="977" y="145"/>
+<ARC label="全体空間">移動する$slot2</ARC>
+<ARC label="部分空間">移動する$slot3%移動手段:slot6</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n20" >
+<LABEL>食事する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="793" y="216"/>
+<SLOTS>
+<SLOT id="1196745360000_s27" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="利用施設"  class_constraint="飲食店"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="施設利用行為$slot"/>
+<SUB_L label="" def="" role_name="" class_const="飲食店" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s28" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="食べたもの"  class_constraint="料理"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="料理" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n21" >
+<LABEL>観光する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="791" y="310"/>
+<SLOTS>
+<SLOT id="1196745360000_s30" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="見学施設"  class_constraint="施設"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<DEF>施設でなくて，場所でもOK？
+でも，何か見る物がほしい．
+→すべての施設を制約としてOKにしておくと汎用的？</DEF>
+<PARENT_SLOT slot="施設利用行為$slot"/>
+<SUB_L label="" def="" role_name="" class_const="施設" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n22" >
+<LABEL>買い物する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="787" y="382"/>
+<SLOTS>
+<SLOT id="1196745360000_s32" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="利用施設"  class_constraint="買い物施設"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="施設利用行為$slot"/>
+<SUB_L label="" def="" role_name="" class_const="買い物施設" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196979042000_s35" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="購入物"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n23" >
+<LABEL>宿泊する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="803" y="482"/>
+<DEF>宿泊先として，５スターホテルと２スターホテルを使う．</DEF>
+<SLOTS>
+<SLOT id="1196745360000_s34" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="利用施設"  class_constraint="宿泊施設"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="施設利用行為$slot"/>
+<SUB_L label="" def="" role_name="" class_const="宿泊施設" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n32" >
+<LABEL>国内旅行</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="951" y="570"/>
+<SLOTS>
+<SLOT id="1196979042000_s39" 
+ type="OR"  label="slot7"  kind="a/o"  num="1"  role="旅行する国"  class_constraint="国"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot7"/>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196979042000_s40" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot"/>
+<SLOTS>
+<SLOT id="1196979042000_s41" 
+ type="R2-2"  label="人:slot"  kind="a/o"  num="1"  role="居住国"  class_constraint="国"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="人$slot"/>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196979042000_rc42" label="異なる" ><POS x="1203" y="650"/>
+<ARC label="class">国内旅行$slot7</ARC>
+<ARC label="class">国内旅行$slot%人:slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n33" >
+<LABEL>海外旅行</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="843" y="779"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196979042000_s44" 
+ type="OR"  label="slot7"  kind="a/o"  num="1"  role="旅行する国"  class_constraint="国"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot7"/>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196979042000_s45" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot"/>
+<SLOTS>
+<SLOT id="1196979042000_s46" 
+ type="R1"  label="人:slot"  kind="a/o"  num="1"  role="居住国"  class_constraint="国"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="人$slot"/>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196979042000_rc47" label="異なる" ><POS x="1149" y="852"/>
+<ARC label="class">海外旅行$slot7</ARC>
+<ARC label="class">海外旅行$slot%人:slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n34" >
+<LABEL>アジア旅行</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="931" y="964"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196745360000_s42" 
+ type="OR"  label="slot5"  kind="p/o"  num="1"  role="旅行先"  class_constraint="p-アジア"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot5"/>
+<SUB_L label="" def="" role_name="" class_const="p-アジア" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n35" >
+<LABEL>アメリカ旅行</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1187" y="921"/>
+<SLOTS>
+<SLOT id="1196745360000_s44" 
+ type="OR"  label="slot5"  kind="p/o"  num="1"  role="旅行先"  class_constraint="p-アメリカ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot5"/>
+<SUB_L label="" def="" role_name="" class_const="p-アメリカ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n36" >
+<LABEL>韓国旅行</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1003" y="1071"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196745360000_s46" 
+ type="OR"  label="slot5"  kind="p/o"  num="1"  role="旅行先"  class_constraint="p-アジア"  rh_name=""  value="韓国" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="アジア旅行$slot5"/>
+<SUB_L label="" def="" role_name="" class_const="p-アジア" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n37" >
+<LABEL>韓国旅行（宿泊）</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1264" y="1166"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1197000157904_s55" 
+ type="OR"  label="slot4"  kind="p/o"  num="1"  role="初日のイベント"  class_constraint="旅行イベント"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot4"/>
+<SLOTS>
+<SLOT id="1197000157904_s56" 
+ type="R2-2"  label="旅行イベント:slot2"  kind="p/o"  num="1"  role="実施行為"  class_constraint="移動する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1197000157904_s57" 
+ type="R2-2"  label="移動する:slot"  kind="p/o"  num="1"  role="出発場所"  class_constraint="場所"  rh_name=""  value="日本" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s58" 
+ type="R2-2"  label="移動する:slot2"  kind="p/o"  num="1"  role="移動先"  class_constraint="場所"  rh_name=""  value="韓国" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s59" 
+ type="OR"  label="移動する:slot22"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2%slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s63" 
+ type="OR"  label="旅行イベント:slot22"  kind="p/o"  num="1"  role="実施行為"  class_constraint="宿泊する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1197000157904_s64" 
+ type="R2-2"  label="宿泊する:slot2"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2%slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="宿泊する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s67" 
+ type="OR"  label="旅行イベント:旅行イベント:slot3"  kind="p/o"  num="1"  role="参加期間"  class_constraint="期間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot4%旅行イベント:slot3"/>
+<SLOTS>
+<SLOT id="1197601805409_s68" 
+ type="R2-2"  label="期間:slot2"  kind="p/o"  num="1"  role="終了日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="期間$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="期間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="旅行イベント" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s67" 
+ type="OR"  label="slot42"  kind="p/o"  num="1"  role="最終日のイベント"  class_constraint="旅行イベント"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot4"/>
+<SLOTS>
+<SLOT id="1197000157904_s68" 
+ type="R2-2"  label="旅行イベント:slot2"  kind="p/o"  num="1"  role="実施行為"  class_constraint="移動する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1197000157904_s69" 
+ type="R2-2"  label="移動する:slot"  kind="p/o"  num="1"  role="出発場所"  class_constraint="場所"  rh_name=""  value="韓国" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s70" 
+ type="R2-2"  label="移動する:slot2"  kind="p/o"  num="1"  role="移動先"  class_constraint="場所"  rh_name=""  value="日本" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s71" 
+ type="OR"  label="移動する:slot22"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2%slot2"/>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s74" 
+ type="OR"  label="旅行イベント:旅行イベント:slot3"  kind="p/o"  num="1"  role="参加期間"  class_constraint="期間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot4%旅行イベント:slot3"/>
+<SLOTS>
+<SLOT id="1197601805409_s75" 
+ type="R1"  label="期間:slot"  kind="p/o"  num="1"  role="開始日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="期間$slot"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="期間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="旅行イベント" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1197000157904_rc73" label="同じ" ><POS x="1667" y="1480"/>
+<ARC label="class">韓国旅行（宿泊）$slot4%旅行イベント:slot2%移動する:slot</ARC>
+<ARC label="class">韓国旅行（宿泊）$slot42%旅行イベント:slot2%移動する:slot2</ARC>
+</R_CONST>
+<R_CONST id="1197000157904_rc74" label="同じ" ><POS x="1660" y="1440"/>
+<ARC label="class">韓国旅行（宿泊）$slot4%旅行イベント:slot2%移動する:slot2</ARC>
+<ARC label="class">韓国旅行（宿泊）$slot42%旅行イベント:slot2%移動する:slot</ARC>
+</R_CONST>
+<R_CONST id="1197601805409_rc78" label="時間的前後関係" ><POS x="1631" y="1381"/>
+<ARC label="前">韓国旅行（宿泊）$slot4%旅行イベント:slot2%移動する:slot22</ARC>
+<ARC label="後">韓国旅行（宿泊）$slot4%旅行イベント:slot22%宿泊する:slot2</ARC>
+</R_CONST>
+<R_CONST id="1197601805409_rc79" label="時間的前後関係" ><POS x="1641" y="1561"/>
+<ARC label="前">韓国旅行（宿泊）$slot4%旅行イベント:slot22%宿泊する:slot2</ARC>
+<ARC label="後">韓国旅行（宿泊）$slot42%旅行イベント:slot2%移動する:slot22</ARC>
+</R_CONST>
+<R_CONST id="1197601805409_rc80" label="時間的前後関係" ><POS x="1569" y="1613"/>
+<ARC label="前">韓国旅行（宿泊）$slot4%旅行イベント:旅行イベント:slot3%期間:slot2</ARC>
+<ARC label="後">韓国旅行（宿泊）$slot42%旅行イベント:旅行イベント:slot3%期間:slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n38" >
+<LABEL>２泊３日韓国旅行・格安プラン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="1770" y="1200"/>
+<SLOTS>
+<SLOT id="1197601805409_s82" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot"/>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s77" 
+ type="OR"  label="slot4"  kind="p/o"  num="1"  role="初日のイベント"  class_constraint="旅行イベント"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4"/>
+<SLOTS>
+<SLOT id="1197601805409_s84" 
+ type="OR"  label="旅行イベント:旅行イベント:slot2"  kind="p/o"  num="1"  role="実施行為"  class_constraint="移動する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4%旅行イベント:slot2"/>
+<SLOTS>
+<SLOT id="1197601805409_s85" 
+ type="OR"  label="移動する:移動する:slot"  kind="p/o"  num="1"  role="出発場所"  class_constraint="場所"  rh_name=""  value="日本" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4%旅行イベント:slot2%移動する:slot"/>
+</SLOT>
+<SLOT id="1197601805409_s86" 
+ type="OR"  label="移動する:移動する:slot2"  kind="p/o"  num="1"  role="移動先"  class_constraint="場所"  rh_name=""  value="韓国" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4%旅行イベント:slot2%移動する:slot2"/>
+</SLOT>
+<SLOT id="1197605727865_s87" 
+ type="R2-2"  label="移動する:slot3"  kind="a/o"  num="1"  role="移動手段"  class_constraint="飛行機移動"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot3"/>
+<SLOTS>
+<SLOT id="1197605727865_s88" 
+ type="R2-2"  label="移動手段:slot"  kind="a/o"  num="1"  role="運行会社"  class_constraint="航空会社"  rh_name=""  value="大韓航空" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="飛行機移動$slot"/>
+<SUB_L label="" def="" role_name="" class_const="航空会社" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s89" 
+ type="R2-2"  label="移動手段:slot2"  kind="a/o"  num="1"  role="便名"  class_constraint="string"  rh_name=""  value="123便" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="string" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s90" 
+ type="R2-2"  label="移動手段:slot4"  kind="p/o"  num="1.."  role="客"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s91" 
+ type="R2-2"  label="飛行機移動:slot5"  kind="a/o"  num="1"  role="出発空港"  class_constraint="空港"  rh_name=""  value="関西空港" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="飛行機移動$slot5"/>
+<SUB_L label="" def="" role_name="" class_const="空港" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s92" 
+ type="R2-2"  label="飛行機移動:slot6"  kind="a/o"  num="1"  role="到着空港"  class_constraint="空港"  rh_name=""  value="ソウル空港" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="飛行機移動$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="空港" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="飛行機移動" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s93" 
+ type="OR"  label="移動する:移動する:slot22"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4%旅行イベント:slot2%移動する:slot22"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s87" 
+ type="R2-2"  label="旅行イベント:slot2"  kind="p/o"  num="0.."  role="実施行為"  class_constraint="移動する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1197601805409_s88" 
+ type="R2-2"  label="移動する:slot"  kind="p/o"  num="1"  role="出発場所"  class_constraint="場所"  rh_name=""  value="ソウル空港" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s89" 
+ type="R2-2"  label="移動する:slot2"  kind="p/o"  num="1"  role="移動先"  class_constraint="場所"  rh_name=""  value="ソウル市内" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s90" 
+ type="R2-2"  label="移動する:slot3"  kind="a/o"  num="1"  role="移動手段"  class_constraint="バス移動"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="バス移動" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s98" 
+ type="OR"  label="移動する:slot22"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2%slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s91" 
+ type="OR"  label="旅行イベント:旅行イベント:slot22"  kind="p/o"  num="1"  role="実施行為"  class_constraint="宿泊する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4%旅行イベント:slot22"/>
+<SLOTS>
+<SLOT id="1197601805409_s92" 
+ type="R2-2"  label="宿泊する:slot"  kind="a/o"  num="1"  role="利用施設"  class_constraint="ホテル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="宿泊する$slot"/>
+<SLOTS>
+<SLOT id="1197601805409_s93" 
+ type="R2-2"  label="ホテル:slot"  kind="a/o"  num="1"  role="格付け"  class_constraint="２つ星"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ホテル$slot"/>
+<SUB_L label="" def="" role_name="" class_const="２つ星" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="ホテル" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s102" 
+ type="OR"  label="宿泊する:宿泊する:slot2"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4%旅行イベント:slot22%宿泊する:slot2"/>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="宿泊する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s103" 
+ type="OR"  label="旅行イベント:旅行イベント:旅行イベント:slot3"  kind="p/o"  num="1"  role="参加期間"  class_constraint="期間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4%旅行イベント:旅行イベント:slot3"/>
+<SLOTS>
+<SLOT id="1197605727865_s104" 
+ type="OR"  label="期間:期間:slot2"  kind="p/o"  num="1"  role="終了日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot4%旅行イベント:旅行イベント:slot3%期間:slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="期間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="旅行イベント" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s79" 
+ type="OR"  label="slot42"  kind="p/o"  num="1"  role="２日目のイベント"  class_constraint="旅行イベント"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="旅行イベント$slot4"/>
+<SLOTS>
+<SLOT id="1197601805409_s95" 
+ type="R2-2"  label="旅行イベント:slot2"  kind="p/o"  num="1.."  role="実施行為"  class_constraint="買い物する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1197601805409_s96" 
+ type="R2-2"  label="買い物する:slot"  kind="a/o"  num="1"  role="実施場所"  class_constraint="場所"  rh_name=""  value="ソウル市内" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2%slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="買い物する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s97" 
+ type="OR"  label="旅行イベント:slot22"  kind="p/o"  num="1.."  role="実施行為"  class_constraint="食事する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1197601805409_s98" 
+ type="R2-2"  label="食事する:slot"  kind="a/o"  num="1"  role="実施場所"  class_constraint="場所"  rh_name=""  value="ソウル市内" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="旅行イベント$slot2%slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="食事する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s110" 
+ type="OR"  label="旅行イベント:旅行イベント:slot3"  kind="p/o"  num="1"  role="参加期間"  class_constraint="期間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot4%旅行イベント:slot3"/>
+<SLOTS>
+<SLOT id="1197605727865_s111" 
+ type="R1"  label="期間:slot"  kind="p/o"  num="1"  role="開始日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="期間$slot"/>
+</SLOT>
+<SLOT id="1197605727865_s112" 
+ type="R1"  label="期間:slot2"  kind="p/o"  num="1"  role="終了日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="期間$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="期間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="旅行イベント" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s113" 
+ type="OR"  label="slot422"  kind="p/o"  num="1"  role="最終日のイベント"  class_constraint="旅行イベント"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot42"/>
+<SLOTS>
+<SLOT id="1197605727865_s114" 
+ type="R2-2"  label="slot2"  kind="p/o"  num="1.."  role="実施行為"  class_constraint="観光する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1197605727865_s115" 
+ type="R2-2"  label="観光する:slot2"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2%slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="観光する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s116" 
+ type="R2-2"  label="旅行イベント:slot2"  kind="p/o"  num="1"  role="実施行為"  class_constraint="移動する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1197605727865_s117" 
+ type="R2-2"  label="移動する:slot"  kind="p/o"  num="1"  role="出発場所"  class_constraint="場所"  rh_name=""  value="ソウル市内" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s118" 
+ type="R2-2"  label="移動する:slot2"  kind="p/o"  num="1"  role="移動先"  class_constraint="場所"  rh_name=""  value="ソウル空港" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s119" 
+ type="R2-2"  label="移動する:slot3"  kind="a/o"  num="1"  role="移動手段"  class_constraint="バス移動"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="バス移動" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s120" 
+ type="R2-2"  label="移動する:slot22"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2%slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s121" 
+ type="OR"  label="旅行イベント:旅行イベント:slot2"  kind="p/o"  num="1"  role="実施行為"  class_constraint="移動する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot42%旅行イベント:slot2"/>
+<SLOTS>
+<SLOT id="1197605727865_s122" 
+ type="R2-2"  label="移動する:slot3"  kind="a/o"  num="1"  role="移動手段"  class_constraint="飛行機移動"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot3"/>
+<SLOTS>
+<SLOT id="1197605727865_s123" 
+ type="R1"  label="飛行機移動:slot2"  kind="a/o"  num="1"  role="便名"  class_constraint="string"  rh_name=""  value="223便" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="string" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s124" 
+ type="R1"  label="飛行機移動:slot4"  kind="p/o"  num="1.."  role="客"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot4"/>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s125" 
+ type="R1"  label="飛行機移動:slot"  kind="a/o"  num="1"  role="航空会社"  class_constraint="航空会社"  rh_name=""  value="大韓航空" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="飛行機移動$slot"/>
+<SUB_L label="" def="" role_name="" class_const="航空会社" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s126" 
+ type="R1"  label="飛行機移動:slot5"  kind="a/o"  num="1"  role="出発空港"  class_constraint="空港"  rh_name=""  value="ソウル空港" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="飛行機移動$slot5"/>
+<SUB_L label="" def="" role_name="" class_const="空港" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s127" 
+ type="R1"  label="飛行機移動:slot6"  kind="a/o"  num="1"  role="到着空港"  class_constraint="空港"  rh_name=""  value="関西空港" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="飛行機移動$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="空港" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="飛行機移動" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s128" 
+ type="OR"  label="移動する:移動する:slot22"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot42%旅行イベント:slot2%移動する:slot22"/>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s129" 
+ type="OR"  label="旅行イベント:旅行イベント:旅行イベント:slot3"  kind="p/o"  num="1"  role="参加期間"  class_constraint="期間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot42%旅行イベント:旅行イベント:slot3"/>
+<SLOTS>
+<SLOT id="1197605727865_s130" 
+ type="OR"  label="期間:期間:slot"  kind="p/o"  num="1"  role="開始日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="韓国旅行（宿泊）$slot42%旅行イベント:旅行イベント:slot3%期間:slot"/>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="期間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="旅行イベント" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1197605727865_rc131" label="時間的前後関係" ><POS x="2139" y="1725"/>
+<ARC label="前">２泊３日韓国旅行・格安プラン$slot4%旅行イベント:旅行イベント:slot2%移動する:移動する:slot22</ARC>
+<ARC label="後">２泊３日韓国旅行・格安プラン$slot4%旅行イベント:slot2%移動する:slot2</ARC>
+</R_CONST>
+<R_CONST id="1197605727865_rc132" label="時間的前後関係" ><POS x="2140" y="1876"/>
+<ARC label="前">２泊３日韓国旅行・格安プラン$slot4%旅行イベント:slot2%移動する:slot2</ARC>
+<ARC label="後">２泊３日韓国旅行・格安プラン$slot4%旅行イベント:旅行イベント:slot22%宿泊する:宿泊する:slot2</ARC>
+</R_CONST>
+<R_CONST id="1197605727865_rc133" label="包含関係" ><POS x="2166" y="1428"/>
+<ARC label="全体">２泊３日韓国旅行・格安プラン$slot4%旅行イベント:旅行イベント:slot2%移動する:slot3%移動手段:slot4</ARC>
+<ARC label="構成要素">２泊３日韓国旅行・格安プラン$slot</ARC>
+</R_CONST>
+<R_CONST id="1197605727865_rc134" label="時間的前後関係" ><POS x="2154" y="2155"/>
+<ARC label="前">２泊３日韓国旅行・格安プラン$slot4%旅行イベント:旅行イベント:旅行イベント:slot3%期間:期間:slot2</ARC>
+<ARC label="後">２泊３日韓国旅行・格安プラン$slot42%旅行イベント:旅行イベント:slot3%期間:slot</ARC>
+</R_CONST>
+<R_CONST id="1197605727865_rc135" label="時間的前後関係" ><POS x="2189" y="2452"/>
+<ARC label="前">２泊３日韓国旅行・格安プラン$slot42%旅行イベント:旅行イベント:slot3%期間:slot2</ARC>
+<ARC label="後">２泊３日韓国旅行・格安プラン$slot422%旅行イベント:旅行イベント:旅行イベント:slot3%期間:期間:slot</ARC>
+</R_CONST>
+<R_CONST id="1197605727865_rc136" label="時間的前後関係" ><POS x="2081" y="2487"/>
+<ARC label="前">２泊３日韓国旅行・格安プラン$slot422%slot2%観光する:slot2</ARC>
+<ARC label="後">２泊３日韓国旅行・格安プラン$slot422%旅行イベント:slot2%移動する:slot2</ARC>
+</R_CONST>
+<R_CONST id="1197605727865_rc137" label="時間的前後関係" ><POS x="2120" y="2739"/>
+<ARC label="前">２泊３日韓国旅行・格安プラン$slot422%旅行イベント:slot2%移動する:slot2</ARC>
+<ARC label="後">２泊３日韓国旅行・格安プラン$slot422%旅行イベント:旅行イベント:slot2%移動する:移動する:slot22</ARC>
+</R_CONST>
+<R_CONST id="1197605727865_rc138" label="包含関係" ><POS x="2164" y="1831"/>
+<ARC label="全体">２泊３日韓国旅行・格安プラン$slot422%旅行イベント:旅行イベント:slot2%移動する:slot3%飛行機移動:slot4</ARC>
+<ARC label="構成要素">２泊３日韓国旅行・格安プラン$slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706984000_n40" >
+<LABEL>日帰り韓国旅行</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="891" y="1175"/>
+<SLOTS>
+<SLOT id="1196745360000_s51" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="実施行為"  class_constraint="移動する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1196745360000_s52" 
+ type="R2-2"  label="移動する:slot"  kind="p/o"  num="1"  role="出発場所"  class_constraint="場所"  rh_name=""  value="日本" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s53" 
+ type="R2-2"  label="移動する:slot2"  kind="p/o"  num="1"  role="移動先"  class_constraint="場所"  rh_name=""  value="韓国" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196978817459_s54" 
+ type="R2-2"  label="移動する:slot3"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="行為$slot3"/>
+<SLOTS>
+<SLOT id="1196979042000_s63" 
+ type="R2-2"  label="日時:slot"  kind="p/o"  num="1"  role="年月日"  class_constraint="年月日"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="日時$slot"/>
+<SUB_L label="" def="" role_name="" class_const="年月日" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動する" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s55" 
+ type="OR"  label="slot23"  kind="p/o"  num="1"  role="実施行為"  class_constraint="移動する"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2"/>
+<SLOTS>
+<SLOT id="1196979042000_s67" 
+ type="R2-2"  label="移動する:slot2"  kind="a/o"  num="1"  role="実施日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="旅行イベント$slot2%slot2"/>
+<SLOTS>
+<SLOT id="1196979042000_s68" 
+ type="R1"  label="日時:slot"  kind="p/o"  num="1"  role="年月日"  class_constraint="年月日"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="日時$slot"/>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196979042000_s69" 
+ type="R2-2"  label="移動する:slot"  kind="p/o"  num="1"  role="出発場所"  class_constraint="場所"  rh_name=""  value="韓国" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196979042000_s70" 
+ type="R2-2"  label="移動する:slot22"  kind="p/o"  num="1"  role="移動先"  class_constraint="場所"  rh_name=""  value="日本" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動する$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="移動する" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196979042000_rc74" label="同じ" ><POS x="1203" y="1424"/>
+<ARC label="class">日帰り韓国旅行$slot2%移動する:slot3%日時:slot</ARC>
+<ARC label="class">日帰り韓国旅行$slot23%移動する:slot2%日時:slot</ARC>
+</R_CONST>
+<R_CONST id="1197601805409_rc111" label="時間的前後関係" ><POS x="1166" y="1342"/>
+<ARC label="前">日帰り韓国旅行$slot2%移動する:slot3</ARC>
+<ARC label="後">日帰り韓国旅行$slot23%移動する:slot2</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n56" >
+<LABEL>時</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="179" y="2291"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n57" >
+<LABEL>期間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="263" y="2285"/>
+<SLOTS>
+<SLOT id="1196745360000_s58" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="開始日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s59" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="終了日時"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n60" >
+<LABEL>日時</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="263" y="2378"/>
+<SLOTS>
+<SLOT id="1196745360000_s61" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="年月日"  class_constraint="年月日"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="年月日" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s62" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="時"  class_constraint="時計時間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="時計時間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n63" >
+<LABEL>年月日</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="250" y="2467"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n64" >
+<LABEL>時計時間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="235" y="2542"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n65" >
+<LABEL>時間属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="113" y="2453"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n66" >
+<LABEL>人</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="573" y="1022"/>
+<SLOTS>
+<SLOT id="1196979042000_s87" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="居住国"  class_constraint="国"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n67" >
+<LABEL>場所</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="274" y="1704"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n68" >
+<LABEL>国</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="432" y="1642"/>
+<DEF>国の下位概念で書いているものは，本当はインスタンス．
+ただ，行き先として示すためにクラスで定義している．</DEF>
+<SLOTS>
+<SLOT id="1196745360000_s69" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="構成都市"  class_constraint="都市"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="都市" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n70" >
+<LABEL>地域</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="361" y="1742"/>
+<SLOTS>
+<SLOT id="1196745360000_s71" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="構成国"  class_constraint="国"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n72" >
+<LABEL>アジア</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="518" y="1796"/>
+<SLOTS>
+<SLOT id="1196745360000_s73" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="構成国"  class_constraint="国"  rh_name=""  value="日本" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="地域$slot"/>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s74" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="構成国"  class_constraint="国"  rh_name=""  value="中国" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="地域$slot"/>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s75" 
+ type="OR"  label="slot3"  kind="p/o"  num="1"  role="構成国"  class_constraint="国"  rh_name=""  value="韓国" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="地域$slot"/>
+<SUB_L label="" def="" role_name="" class_const="国" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n76" instantiation="true" >
+<LABEL>アメリカ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="486" y="1927"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n77" instantiation="true" >
+<LABEL>ヨーロッパ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="464" y="1963"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n78" instantiation="true" >
+<LABEL>日本</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="624" y="1614"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n79" instantiation="true" >
+<LABEL>中国</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="679" y="1631"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n80" instantiation="true" >
+<LABEL>韓国</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="736" y="1667"/>
+<SLOTS>
+<SLOT id="1196745360000_s81" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="構成都市"  class_constraint="ソウル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="国$slot"/>
+<SUB_L label="" def="" role_name="" class_const="ソウル" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s82" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="構成都市"  class_constraint="釜山"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="国$slot"/>
+<SUB_L label="" def="" role_name="" class_const="釜山" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n83" instantiation="true" >
+<LABEL>アメリカ合衆国</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="608" y="1750"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n84" instantiation="true" >
+<LABEL>イギリス</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="703" y="1812"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n85" instantiation="true" >
+<LABEL>ベトナム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="625" y="1697"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n86" >
+<LABEL>都市</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="342" y="1835"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n87" instantiation="true" >
+<LABEL>ソウル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="402" y="1873"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n88" instantiation="true" >
+<LABEL>釜山</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="398" y="1919"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n89" >
+<LABEL>移動手段</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="334" y="2002"/>
+<SLOTS>
+<SLOT id="1197601805409_s147" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="運行会社"  class_constraint="会社"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="会社" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s148" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="便名"  class_constraint="string"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="string" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s149" 
+ type="NW"  label="slot3"  kind="p/o"  num="1.."  role="乗務員"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="slot3" def="" role_name="乗務員" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s150" 
+ type="NW"  label="slot4"  kind="p/o"  num="1.."  role="客"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="slot4" def="" role_name="客" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s151" 
+ type="NW"  label="slot5"  kind="a/o"  num="1"  role="出発地"  class_constraint="移動乗り降り施設"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="移動乗り降り施設" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197601805409_s152" 
+ type="NW"  label="slot6"  kind="a/o"  num="1"  role="到着地"  class_constraint="移動乗り降り施設"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="移動乗り降り施設" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n90" >
+<LABEL>飛行機移動</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="763" y="1973"/>
+<SLOTS>
+<SLOT id="1196745360000_s91" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="航空会社"  class_constraint="航空会社"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot"/>
+<SUB_L label="" def="" role_name="" class_const="航空会社" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197296950000_s136" 
+ type="NW"  label="slot5"  kind="a/o"  num="1"  role="出発空港"  class_constraint="空港"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot5"/>
+<SUB_L label="" def="" role_name="" class_const="空港" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197296950000_s137" 
+ type="NW"  label="slot6"  kind="a/o"  num="1"  role="到着空港"  class_constraint="空港"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="移動手段$slot6"/>
+<SUB_L label="" def="" role_name="" class_const="空港" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n93" >
+<LABEL>バス移動</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="559" y="2108"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n94" >
+<LABEL>リムジン移動</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="545" y="2147"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n95" >
+<LABEL>船舶移動</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="588" y="2057"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n96" >
+<LABEL>航空会社</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="544" y="1143"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n97" >
+<LABEL>ANA</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="661" y="1106"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n98" >
+<LABEL>大韓航空</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="667" y="1160"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n99" >
+<LABEL>施設</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="430" y="1236"/>
+<SLOTS>
+<SLOT id="1197296950000_s145" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="所在地"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n100" >
+<LABEL>飲食店</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="613" y="1209"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n101" >
+<LABEL>屋台</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="751" y="1181"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n102" >
+<LABEL>レストラン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="739" y="1227"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n103" >
+<LABEL>買い物施設</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="599" y="1273"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n104" >
+<LABEL>料理</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="391" y="1484"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n105" >
+<LABEL>施設利用行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="444" y="266"/>
+<SLOTS>
+<SLOT id="1196745360000_s106" 
+ type="NW"  label="slot"  kind="a/o"  num="1.."  role="利用施設"  class_constraint="施設"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1197605727865_s212" 
+ type="R1"  label="施設:slot"  kind="a/o"  num="1"  role="所在地"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="施設$slot"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="施設" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197605727865_s213" 
+ type="OR"  label="slot2"  kind="a/o"  num="1"  role="実施場所"  class_constraint="場所"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="行為$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="場所" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1197605727865_rc214" label="空間的包含関係" ><POS x="642" y="368"/>
+<ARC label="部分空間">施設利用行為$slot2</ARC>
+<ARC label="全体空間">施設利用行為$slot%施設:slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n107" >
+<LABEL>宿泊施設</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="560" y="1357"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n108" >
+<LABEL>市場</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="739" y="1277"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n109" >
+<LABEL>ショッピングモール</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="735" y="1339"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n110" >
+<LABEL>商店</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="719" y="1407"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n111" >
+<LABEL>ホテル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="690" y="1430"/>
+<SLOTS>
+<SLOT id="1196745360000_s112" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="格付け"  class_constraint="星ランク"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="星ランク" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n113" >
+<LABEL>旅館</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="683" y="1507"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n114" >
+<LABEL>ユースホステル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="658" y="1565"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n115" >
+<LABEL>星ランク</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="452" y="2277"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="星ランク" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745360000_n116" >
+<LABEL>１つ星</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="637" y="2245"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="１つ星" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745360000_n117" >
+<LABEL>２つ星</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="673" y="2283"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="２つ星" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745360000_n118" >
+<LABEL>３つ星</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="717" y="2311"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="３つ星" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745360000_n123" >
+<LABEL>格付け規約</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="441" y="2370"/>
+<SLOTS>
+<SLOT id="1196745360000_s124" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="ランク"  class_constraint="星ランク"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="slot" def="" role_name="ランク" class_const="星ランク" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="ミシュラン格付け規約" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745360000_n125" >
+<LABEL>ホテル格付けランク上下規約</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="648" y="2457"/>
+<SLOTS>
+<SLOT id="1196745360000_s126" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="ランク"  class_constraint="１つ星"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="格付け規約$slot"/>
+<SUB_L label="" def="" role_name="" class_const="１つ星" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s127" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="ランク"  class_constraint="２つ星"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="格付け規約$slot"/>
+<SUB_L label="" def="" role_name="" class_const="２つ星" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s128" 
+ type="OR"  label="slot3"  kind="p/o"  num="1"  role="ランク"  class_constraint="３つ星"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="格付け規約$slot"/>
+<SUB_L label="" def="" role_name="" class_const="３つ星" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s129" 
+ type="OR"  label="slot4"  kind="p/o"  num="1"  role="ランク"  class_constraint="４つ星"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="格付け規約$slot"/>
+<SUB_L label="" def="" role_name="" class_const="４つ星" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s130" 
+ type="OR"  label="slot5"  kind="p/o"  num="1"  role="ランク"  class_constraint="５つ星"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="格付け規約$slot"/>
+<SUB_L label="" def="" role_name="" class_const="５つ星" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1197000157904_rc181" label="ランクの上下関係" ><POS x="864" y="2623"/>
+<ARC label="上ランク">ホテル格付けランク上下規約$slot5</ARC>
+<ARC label="下ランク">ホテル格付けランク上下規約$slot4</ARC>
+</R_CONST>
+<R_CONST id="1197000157904_rc182" label="ランクの上下関係" ><POS x="864" y="2589"/>
+<ARC label="上ランク">ホテル格付けランク上下規約$slot4</ARC>
+<ARC label="下ランク">ホテル格付けランク上下規約$slot3</ARC>
+</R_CONST>
+<R_CONST id="1197000157904_rc183" label="ランクの上下関係" ><POS x="864" y="2553"/>
+<ARC label="上ランク">ホテル格付けランク上下規約$slot3</ARC>
+<ARC label="下ランク">ホテル格付けランク上下規約$slot2</ARC>
+</R_CONST>
+<R_CONST id="1197000157904_rc184" label="ランクの上下関係" ><POS x="864" y="2519"/>
+<ARC label="上ランク">ホテル格付けランク上下規約$slot2</ARC>
+<ARC label="下ランク">ホテル格付けランク上下規約$slot</ARC>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="ミシュラン格付けランク上下規約" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745360000_n136" >
+<LABEL>４つ星</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="739" y="2347"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n137" >
+<LABEL>５つ星</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="747" y="2377"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1197001850000_n179" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="55" y="1336"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1197001850000_n180" >
+<LABEL>もの</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="300" y="1159"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1197001850000_n181" >
+<LABEL>属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="89" y="2206"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1197296950000_n182" >
+<LABEL>移動乗り降り施設</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="487" y="1470"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1197296950000_n183" >
+<LABEL>空港</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="594" y="1523"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1197296950000_n184" >
+<LABEL>駅</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="581" y="1568"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1197601805409_n204" >
+<LABEL>会社</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="448" y="1141"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<ISA id="1196706817258_isa41" parent="イベント" child="旅行イベント" />
+<ISA id="1196706817258_isa43" parent="行為" child="移動する" />
+<ISA id="1196706817258_isa49" parent="旅行イベント" child="国内旅行" />
+<ISA id="1196706817258_isa50" parent="旅行イベント" child="海外旅行" />
+<ISA id="1196706817258_isa51" parent="海外旅行" child="アジア旅行" />
+<ISA id="1196706817258_isa52" parent="海外旅行" child="アメリカ旅行" />
+<ISA id="1196706817258_isa53" parent="アジア旅行" child="韓国旅行" />
+<ISA id="1196706817258_isa54" parent="韓国旅行" child="韓国旅行（宿泊）" />
+<ISA id="1196706817258_isa55" parent="韓国旅行（宿泊）" child="２泊３日韓国旅行・格安プラン" />
+<ISA id="1196706984000_isa58" parent="韓国旅行" child="日帰り韓国旅行" />
+<ISA id="1196745360000_isa151" parent="時" child="期間" />
+<ISA id="1196745360000_isa152" parent="時" child="日時" />
+<ISA id="1196745360000_isa153" parent="時間属性" child="年月日" />
+<ISA id="1196745360000_isa154" parent="時間属性" child="時計時間" />
+<ISA id="1196745360000_isa155" parent="場所" child="国" />
+<ISA id="1196745360000_isa156" parent="場所" child="地域" />
+<ISA id="1196745360000_isa157" parent="地域" child="アジア" />
+<ISA id="1196745360000_isa158" parent="地域" child="アメリカ" />
+<ISA id="1196745360000_isa159" parent="地域" child="ヨーロッパ" />
+<ISA id="1196745360000_isa160" parent="国" child="日本" />
+<ISA id="1196745360000_isa161" parent="国" child="中国" />
+<ISA id="1196745360000_isa162" parent="国" child="韓国" />
+<ISA id="1196745360000_isa163" parent="国" child="アメリカ合衆国" />
+<ISA id="1196745360000_isa164" parent="国" child="イギリス" />
+<ISA id="1196745360000_isa165" parent="国" child="ベトナム" />
+<ISA id="1196745360000_isa166" parent="場所" child="都市" />
+<ISA id="1196745360000_isa167" parent="都市" child="ソウル" />
+<ISA id="1196745360000_isa168" parent="都市" child="釜山" />
+<ISA id="1196745360000_isa169" parent="航空会社" child="ANA" />
+<ISA id="1196745360000_isa170" parent="航空会社" child="大韓航空" />
+<ISA id="1196745360000_isa171" parent="施設" child="飲食店" />
+<ISA id="1196745360000_isa172" parent="飲食店" child="屋台" />
+<ISA id="1196745360000_isa173" parent="飲食店" child="レストラン" />
+<ISA id="1196745360000_isa174" parent="施設" child="買い物施設" />
+<ISA id="1196745360000_isa175" parent="行為" child="施設利用行為" />
+<ISA id="1196745360000_isa176" parent="施設利用行為" child="食事する" />
+<ISA id="1196745360000_isa177" parent="施設利用行為" child="観光する" />
+<ISA id="1196745360000_isa178" parent="施設利用行為" child="買い物する" />
+<ISA id="1196745360000_isa179" parent="施設利用行為" child="宿泊する" />
+<ISA id="1196745360000_isa180" parent="施設" child="宿泊施設" />
+<ISA id="1196745360000_isa181" parent="買い物施設" child="市場" />
+<ISA id="1196745360000_isa182" parent="買い物施設" child="ショッピングモール" />
+<ISA id="1196745360000_isa183" parent="買い物施設" child="商店" />
+<ISA id="1196745360000_isa184" parent="宿泊施設" child="ホテル" />
+<ISA id="1196745360000_isa185" parent="宿泊施設" child="旅館" />
+<ISA id="1196745360000_isa186" parent="宿泊施設" child="ユースホステル" />
+<ISA id="1196745360000_isa187" parent="星ランク" child="１つ星" />
+<ISA id="1196745360000_isa188" parent="星ランク" child="２つ星" />
+<ISA id="1196745360000_isa189" parent="星ランク" child="３つ星" />
+<ISA id="1196745360000_isa190" parent="格付け規約" child="ホテル格付けランク上下規約" />
+<ISA id="1196745360000_isa191" parent="星ランク" child="４つ星" />
+<ISA id="1196745360000_isa192" parent="星ランク" child="５つ星" />
+<ISA id="1197001850000_isa234" parent="Any" child="イベント" />
+<ISA id="1197001850000_isa235" parent="Any" child="行為" />
+<ISA id="1197001850000_isa236" parent="Any" child="場所" />
+<ISA id="1197001850000_isa237" parent="Any" child="もの" />
+<ISA id="1197001850000_isa239" parent="もの" child="人" />
+<ISA id="1197001850000_isa240" parent="もの" child="施設" />
+<ISA id="1197001850000_isa241" parent="Any" child="属性" />
+<ISA id="1197001850000_isa242" parent="属性" child="時間属性" />
+<ISA id="1197001850000_isa243" parent="属性" child="時" />
+<ISA id="1197001850000_isa244" parent="もの" child="料理" />
+<ISA id="1197001850000_isa245" parent="属性" child="移動手段" />
+<ISA id="1197001850000_isa246" parent="属性" child="格付け規約" />
+<ISA id="1197001850000_isa247" parent="属性" child="星ランク" />
+<ISA id="1197001850000_isa248" parent="移動手段" child="飛行機移動" />
+<ISA id="1197001850000_isa249" parent="移動手段" child="船舶移動" />
+<ISA id="1197001850000_isa250" parent="移動手段" child="バス移動" />
+<ISA id="1197001850000_isa251" parent="移動手段" child="リムジン移動" />
+<ISA id="1197296950000_isa255" parent="施設" child="移動乗り降り施設" />
+<ISA id="1197296950000_isa256" parent="移動乗り降り施設" child="空港" />
+<ISA id="1197296950000_isa257" parent="移動乗り降り施設" child="駅" />
+<ISA id="1197601805409_isa277" parent="会社" child="航空会社" />
+<ISA id="1197601805409_isa278" parent="もの" child="会社" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1196706817258_n57" >
+<LABEL>時間的包含関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="398" y="68"/>
+<SLOTS>
+<SLOT id="1196706817258_s58" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="全期間"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="包含関係$slot"/>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s59" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="部分期間"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="包含関係$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196706817258_n60" >
+<LABEL>空間的包含関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="429" y="257"/>
+<SLOTS>
+<SLOT id="1196706817258_s61" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="全体空間"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="包含関係$slot"/>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196706817258_s62" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="部分空間"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="包含関係$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n205" >
+<LABEL>同じ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="130" y="380"/>
+<SLOTS>
+<SLOT id="1196745360000_s206" 
+ type="NW"  label="slot"  kind="p/i"  num="2"  role="class"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n207" >
+<LABEL>異なる</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="142" y="484"/>
+<SLOTS>
+<SLOT id="1196745360000_s208" 
+ type="NW"  label="slot"  kind="p/i"  num="2"  role="class"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1196745360000_n209" >
+<LABEL>構成関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="330" y="462"/>
+<SLOTS>
+<SLOT id="1196745360000_s210" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="構成物"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745360000_s211" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="全体物"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1196979042000_n235" >
+<LABEL>包含関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="167" y="174"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196979042000_s236" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="全体"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196979042000_s237" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="構成要素"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1197000157904_n269" >
+<LABEL>時間的前後関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="108" y="598"/>
+<SLOTS>
+<SLOT id="1197000157904_s270" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="前"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s271" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="後"  class_constraint="日時"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="日時" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1197000157904_n272" >
+<LABEL>ランクの上下関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="350" y="600"/>
+<SLOTS>
+<SLOT id="1197000157904_s273" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="上ランク"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1197000157904_s274" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="下ランク"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<ISA id="1196979042000_isa238" parent="包含関係" child="時間的包含関係" />
+<ISA id="1196979042000_isa239" parent="包含関係" child="空間的包含関係" />
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.1905511811024" h="841.8047244094488" iw="451.19055118110236" ih="697.8047244094488" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="HP psc 2400 Series" />
+</PRINTER>
+</OE_FILE>

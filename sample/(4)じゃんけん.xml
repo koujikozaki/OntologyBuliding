@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="(4)じゃんけん.xml" ont_id="1196071621276ont" >
+<FILENAME_ONT>(4)じゃんけん.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2000" h="2000" />
+<CONCEPT id="1196070179148_n0" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="16" y="481"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196070179148_n13" >
+<LABEL>足</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="360" y="191"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196070179148_n14" >
+<LABEL>発話</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="332" y="73"/>
+<SLOTS>
+<SLOT id="1196071129582_s15" 
+ type="OR"  label="slot"  kind="a/o"  num="1"  role="内容"  class_constraint="#形"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="人体の部分_機能$slot"/>
+<SUB_L label="" def="" role_name="" class_const="#形" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196070179148_n15" >
+<LABEL>手</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="339" y="153"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196070179148_n16" >
+<LABEL>形</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="188" y="345"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196070179148_n17" >
+<LABEL>グーの形</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="265" y="322"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196070179148_n18" >
+<LABEL>チョキの形</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="266" y="359"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196070179148_n19" >
+<LABEL>パーの形</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="272" y="392"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196071621276_n21" >
+<LABEL>ジャンケンシーン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="165" y="618"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196071621276_s22" 
+ type="NW"  label="slot"  kind="p/o"  num="2.."  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1196249918445_s11" 
+ type="R2-2"  label="slot"  kind="p/o"  num="1"  role="出し手role"  class_constraint="ジャンケン手"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ジャンケン手" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196071621276_s24" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="勝敗"  class_constraint="勝敗"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="勝敗" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196071621276_n25" >
+<LABEL>人</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="76" y="43"/>
+<SLOTS>
+<SLOT id="1196155986980_s23" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="手"  class_constraint="手"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="手" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196155986980_s24" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="足"  class_constraint="足"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="足" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196071621276_n26" >
+<LABEL>２人ジャンケン決着シーン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="806" y="680"/>
+<SLOTS>
+<SLOT id="1196071621276_s27" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name="参加者1"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="２人ジャンケンシーン$slot"/>
+<SLOTS>
+<SLOT id="1196072620000_s28" 
+ type="R2-2"  label="slot"  kind="a/o"  num="1"  role="手role"  class_constraint="ジャンケン手"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンシーン$slot%slot"/>
+<SLOTS>
+<SLOT id="1196402392019_s19" 
+ type="R2-2"  label="ジャンケン手:人体の部分_機能:slot2"  kind="a/o"  num="1"  role="持ち主"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンの手規約$slot%人体の部分_機能:slot2"/>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="ジャンケン手" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196071621276_s29" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name="参加者2"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="２人ジャンケンシーン$slot"/>
+<SLOTS>
+<SLOT id="1196072620000_s30" 
+ type="R2-2"  label="slot"  kind="a/o"  num="1"  role="手role"  class_constraint="ジャンケン手"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンシーン$slot%slot"/>
+<SLOTS>
+<SLOT id="1196402392019_s22" 
+ type="R2-2"  label="ジャンケン手:人体の部分_機能:slot2"  kind="a/o"  num="1"  role="持ち主"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンの手規約$slot%人体の部分_機能:slot2"/>
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="ジャンケン手" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196071621276_s31" 
+ type="OR"  label="slot22"  kind="p/o"  num="1"  role="勝負"  class_constraint="勝負あり"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンシーン$slot2"/>
+<SLOTS>
+<SLOT id="1196072620000_s32" 
+ type="R2-2"  label="勝負あり:slot"  kind="p/o"  num="1"  role="勝者"  class_constraint="参加者1"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="勝負あり$slot"/>
+<SUB_L label="" def="" role_name="" class_const="参加者1" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="勝負あり" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196072620000_rc33" label="より強い" ><POS x="1166" y="813"/>
+<ARC label="強い方">２人ジャンケン決着シーン$slot%slot</ARC>
+<ARC label="弱い方">２人ジャンケン決着シーン$slot2%slot</ARC>
+</R_CONST>
+<R_CONST id="1196402392019_rc26" label="sameAs" ><POS x="1122" y="930"/>
+<ARC label="class">２人ジャンケン決着シーン$slot2</ARC>
+<ARC label="class">２人ジャンケン決着シーン$slot2%slot%ジャンケン手:人体の部分_機能:slot2</ARC>
+</R_CONST>
+<R_CONST id="1196402392019_rc27" label="sameAs" ><POS x="1174" y="706"/>
+<ARC label="class">２人ジャンケン決着シーン$slot%slot%ジャンケン手:人体の部分_機能:slot2</ARC>
+<ARC label="class">２人ジャンケン決着シーン$slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196071621276_n33" >
+<LABEL>N人ジャンケンシーン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="449" y="753"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196072620000_n35" >
+<LABEL>２人ジャンケンシーン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="528" y="625"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196072620000_s36" 
+ type="OR"  label="slot"  kind="p/o"  num="2"  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンシーン$slot"/>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196072620000_n38" >
+<LABEL>属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="125" y="300"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196072620000_n39" >
+<LABEL>勝敗</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="189" y="265"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196072620000_n40" >
+<LABEL>勝負あり</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="277" y="236"/>
+<SLOTS>
+<SLOT id="1196072620000_s41" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="勝者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196072620000_n42" >
+<LABEL>あいこ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="269" y="289"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196072620000_n43" >
+<LABEL>２人ジャンケンあいこシーン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="846" y="477"/>
+<SLOTS>
+<SLOT id="1196072620000_s44" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="２人ジャンケンシーン$slot"/>
+<SLOTS>
+<SLOT id="1196072620000_s45" 
+ type="R2-2"  label="人:slot"  kind="a/o"  num="1"  role="手role"  class_constraint="ジャンケン手"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンシーン$slot%slot"/>
+<SUB_L label="" def="" role_name="" class_const="ジャンケン手" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196072620000_s46" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="参加者"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="２人ジャンケンシーン$slot"/>
+<SLOTS>
+<SLOT id="1196072620000_s47" 
+ type="R2-2"  label="人:slot"  kind="a/o"  num="1"  role="手role"  class_constraint="ジャンケン手"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンシーン$slot%slot"/>
+<SUB_L label="" def="" role_name="" class_const="ジャンケン手" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196072620000_s48" 
+ type="OR"  label="slot22"  kind="p/o"  num="1"  role="勝敗"  class_constraint="#あいこ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンシーン$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="#あいこ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196072620000_rc49" label="sameAs" ><POS x="1165" y="584"/>
+<ARC label="class">２人ジャンケンあいこシーン$slot%人:slot</ARC>
+<ARC label="class">２人ジャンケンあいこシーン$slot2%人:slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196155986980_n49" >
+<LABEL>人体の部分_機能</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="195" y="126"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196155986980_s50" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="形"  class_constraint="形"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="形" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196402392019_s45" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="持ち主"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196228698839_n54" >
+<LABEL>ジャンケンの強弱規約</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="472" y="326"/>
+<SLOTS>
+<SLOT id="1196228698839_s55" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="グー"  class_constraint="人体の部分_機能"  rh_name="グー"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンの手規約$slot"/>
+<SLOTS>
+<SLOT id="1196247860762_s44" 
+ type="R2-2"  label="人体の部分_機能:slot"  kind="a/o"  num="1"  role="形"  class_constraint="グーの形"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンの手規約$slot%人体の部分_機能:slot"/>
+<SUB_L label="" def="" role_name="" class_const="グーの形" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="slot" def="" role_name="グー" class_const="人体の部分_機能" rh_name ="グー" value ="" />
+</SLOT>
+<SLOT id="1196228698839_s56" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="チョキ"  class_constraint="人体の部分_機能"  rh_name="チョキ"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンの手規約$slot"/>
+<SLOTS>
+<SLOT id="1196247860762_s46" 
+ type="R2-2"  label="人体の部分_機能:slot"  kind="a/o"  num="1"  role="形"  class_constraint="チョキの形"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンの手規約$slot%人体の部分_機能:slot"/>
+<SUB_L label="" def="" role_name="" class_const="チョキの形" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="slot2" def="" role_name="チョキ" class_const="人体の部分_機能" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196228698839_s57" 
+ type="NW"  label="slot3"  kind="p/o"  num="1"  role="パー"  class_constraint="人体の部分_機能"  rh_name="パー"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンの手規約$slot"/>
+<SLOTS>
+<SLOT id="1196247860762_s48" 
+ type="R2-2"  label="人体の部分_機能:slot"  kind="a/o"  num="1"  role="形"  class_constraint="パーの形"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="ジャンケンの手規約$slot%人体の部分_機能:slot"/>
+<SUB_L label="" def="" role_name="" class_const="パーの形" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="slot3" def="" role_name="パー" class_const="人体の部分_機能" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196228698839_rc58" label="より強い" ><POS x="804" y="338"/>
+<ARC label="強い方">ジャンケンの強弱規約$slot</ARC>
+<ARC label="弱い方">ジャンケンの強弱規約$slot2</ARC>
+</R_CONST>
+<R_CONST id="1196228698839_rc59" label="より強い" ><POS x="792" y="527"/>
+<ARC label="強い方">ジャンケンの強弱規約$slot2</ARC>
+<ARC label="弱い方">ジャンケンの強弱規約$slot3</ARC>
+</R_CONST>
+<R_CONST id="1196228698839_rc60" label="より強い" ><POS x="782" y="439"/>
+<ARC label="強い方">ジャンケンの強弱規約$slot3</ARC>
+<ARC label="弱い方">ジャンケンの強弱規約$slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196247860762_n52" >
+<LABEL>ジャンケンの手規約</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="155" y="432"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196247860762_s53" 
+ type="NW"  label="slot"  kind="p/o"  num="1..3"  role="ジャンケン手role"  class_constraint="人体の部分_機能"  rh_name="ジャンケン手"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1196402392019_s58" 
+ type="R2-2"  label="人体の部分_機能:slot2"  kind="a/o"  num="1"  role="持ち主"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="人体の部分_機能$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196402392019_s59" 
+ type="R2-2"  label="人体の部分_機能:slot"  kind="a/o"  num="1"  role="形"  class_constraint="形"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="人体の部分_機能$slot"/>
+<SUB_L label="" def="" role_name="" class_const="形" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="人体の部分_機能" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196648764781_n60" >
+<LABEL>２人ジャンケンゲーム決着</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="394" y="807"/>
+<SLOTS>
+<SLOT id="1196650528088_s63" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="シーン"  class_constraint="２人ジャンケン決着シーン"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="２人ジャンケンゲーム$slot"/>
+<SUB_L label="slot" def="" role_name="シーン" class_const="２人ジャンケン決着シーン" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196729777252_n62" >
+<LABEL>２人ジャンケンゲーム</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="109" y="844"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196729777252_s63" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="シーン"  class_constraint="２人ジャンケンシーン"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="２人ジャンケンシーン" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196729777252_s64" 
+ type="NW"  label="slot2"  kind="p/o"  num="0.."  role="ゲーム"  class_constraint="２人ジャンケンゲーム"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="２人ジャンケンゲーム" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196729777252_n65" >
+<LABEL>２人ジャンケンゲームあいこ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="391" y="909"/>
+<SLOTS>
+<SLOT id="1196729777252_s66" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="シーン"  class_constraint="２人ジャンケンあいこシーン"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="２人ジャンケンゲーム$slot"/>
+<SUB_L label="" def="" role_name="" class_const="２人ジャンケンあいこシーン" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196729777252_s67" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="次のゲーム"  class_constraint="２人ジャンケンゲーム"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="２人ジャンケンゲーム$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="２人ジャンケンゲーム" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<ISA id="1196070179148_isa26" parent="形" child="グーの形" />
+<ISA id="1196070179148_isa27" parent="形" child="チョキの形" />
+<ISA id="1196070179148_isa28" parent="形" child="パーの形" />
+<ISA id="1196071621276_isa43" parent="Any" child="ジャンケンシーン" />
+<ISA id="1196071621276_isa44" parent="Any" child="人" />
+<ISA id="1196071621276_isa46" parent="ジャンケンシーン" child="N人ジャンケンシーン" />
+<ISA id="1196072620000_isa61" parent="ジャンケンシーン" child="２人ジャンケンシーン" />
+<ISA id="1196072620000_isa62" parent="Any" child="属性" />
+<ISA id="1196072620000_isa63" parent="属性" child="形" />
+<ISA id="1196072620000_isa64" parent="属性" child="勝敗" />
+<ISA id="1196072620000_isa65" parent="勝敗" child="勝負あり" />
+<ISA id="1196072620000_isa66" parent="勝敗" child="あいこ" />
+<ISA id="1196072620000_isa67" parent="２人ジャンケンシーン" child="２人ジャンケン決着シーン" />
+<ISA id="1196072620000_isa68" parent="２人ジャンケンシーン" child="２人ジャンケンあいこシーン" />
+<ISA id="1196155986980_isa67" parent="Any" child="人体の部分_機能" />
+<ISA id="1196155986980_isa68" parent="人体の部分_機能" child="手" />
+<ISA id="1196155986980_isa69" parent="人体の部分_機能" child="足" />
+<ISA id="1196155986980_isa70" parent="人体の部分_機能" child="発話" />
+<ISA id="1196247860762_isa72" parent="Any" child="ジャンケンの手規約" />
+<ISA id="1196247860762_isa73" parent="ジャンケンの手規約" child="ジャンケンの強弱規約" />
+<ISA id="1196729777252_isa88" parent="Any" child="２人ジャンケンゲーム" />
+<ISA id="1196729777252_isa89" parent="２人ジャンケンゲーム" child="２人ジャンケンゲーム決着" />
+<ISA id="1196729777252_isa90" parent="２人ジャンケンゲーム" child="２人ジャンケンゲームあいこ" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2000" h="1853" />
+<CONCEPT id="1196070179148_n29" >
+<LABEL>より強い</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="249" y="29"/>
+<SLOTS>
+<SLOT id="1196070179148_s30" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="強い方"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196070179148_s31" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="弱い方"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.1905511811024" h="841.6913385826772" iw="451.19055118110236" ih="697.6913385826772" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="Canon LASER SHOT LBP-2510" />
+</PRINTER>
+</OE_FILE>

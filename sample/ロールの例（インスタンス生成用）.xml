@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="ロールの例（インスタンス生成用）.xml" ont_id="1283815652387ont" >
+<FILENAME_ONT>ロールの例（インスタンス生成用）.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1283815652387_n0" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="20" y="20"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n1" >
+<LABEL>もの</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="144" y="132"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n2" >
+<LABEL>乗り物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="277" y="110"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1283815652403_s3" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="操作者ロール"  class_constraint="人間"  rh_name="操作者"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283815652403_s4" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="動力源ロール"  class_constraint="もの"  rh_name="動力源"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n5" >
+<LABEL>自転車</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="465" y="69"/>
+<SLOTS>
+<SLOT id="1283815652403_s6" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="操作者ロール"  class_constraint="人間"  rh_name="こぎ手"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283815652403_s7" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="動力源ロール"  class_constraint="人間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283815652403_s8" 
+ type="NW"  label="slot3"  kind="p/o"  num="1"  role="ハンドル"  class_constraint="ハンドル"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="ハンドル" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n9" >
+<LABEL>自動車</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="475" y="225"/>
+<SLOTS>
+<SLOT id="1283815652403_s10" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="操作者ロール"  class_constraint="人間"  rh_name="ドライバー"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283815652403_s11" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="動力源ロール"  class_constraint="エンジン"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="乗り物$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="エンジン" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n12" >
+<LABEL>人間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="97" y="250"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n13" >
+<LABEL>エンジン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="221" y="293"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n14" >
+<LABEL>組織</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="118" y="365"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n15" >
+<LABEL>学校</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="309" y="347"/>
+<SLOTS>
+<SLOT id="1283815652403_s16" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="教師ロール"  class_constraint="人間"  rh_name="教師"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283815652403_s17" 
+ type="NW"  label="slot2"  kind="p/o"  num="1.."  role="学生ロール"  class_constraint="人間"  rh_name="学生"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n18" >
+<LABEL>家族</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="212" y="416"/>
+<SLOTS>
+<SLOT id="1283815652403_s19" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="父親ロール"  class_constraint="人間"  rh_name="父親"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283815652403_s20" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="母親ロール"  class_constraint="人間"  rh_name="母親"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283815652403_s21" 
+ type="NW"  label="slot3"  kind="p/o"  num="1.."  role="子供ロール"  class_constraint="人間"  rh_name="子供"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1283815652403_n22" >
+<LABEL>ハンドル</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="215" y="217"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<ISA id="1283815652403_isa23" parent="Any" child="もの" />
+<ISA id="1283815652403_isa24" parent="もの" child="乗り物" />
+<ISA id="1283815652403_isa25" parent="乗り物" child="自転車" />
+<ISA id="1283815652403_isa26" parent="乗り物" child="自動車" />
+<ISA id="1283815652403_isa27" parent="もの" child="人間" />
+<ISA id="1283815652403_isa28" parent="もの" child="エンジン" />
+<ISA id="1283815652403_isa29" parent="もの" child="組織" />
+<ISA id="1283815652403_isa30" parent="組織" child="学校" />
+<ISA id="1283815652403_isa31" parent="組織" child="家族" />
+<ISA id="1283815652403_isa32" parent="もの" child="ハンドル" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1283816122178_n33" >
+<LABEL>操作関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="328" y="103"/>
+<SLOTS>
+<SLOT id="1283816122178_s34" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="操作元ロール"  class_constraint="Any"  rh_name="操作元"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283816122178_s35" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="操作対象ロール"  class_constraint="Any"  rh_name="操作対象"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1283816122178_n36" >
+<LABEL>所有関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="322" y="225"/>
+<SLOTS>
+<SLOT id="1283816122178_s37" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="所有者ロール"  class_constraint="人間"  rh_name="所有者"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283816122178_s38" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="所有物ロール"  class_constraint="もの"  rh_name="所有物"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.1905511811024" h="841.8047244094488" iw="451.19055118110236" ih="697.8047244094488" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="HP psc 2400 Series" />
+</PRINTER>
+</OE_FILE>

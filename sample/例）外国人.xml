@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="例）外国人.xml" ont_id="1222394681750ont" >
+<FILENAME_ONT>例）外国人.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1178329944109_n0" >
+<LABEL>Foreigner situation1</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="288" y="279"/>
+<SLOTS>
+<SLOT id="1178329944109_s1" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="foreigner role"  class_constraint="Human"  rh_name="Foreigner-H"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1180178797687_s2" 
+ type="R1"  label="Human:slot"  kind="a/o"  num="1"  role="nationality"  class_constraint="#Country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="Human$slot"/>
+<SUB_L label="" def="" role_name="" class_const="#Country" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1178329944109_s3" 
+ type="R2-1"  label="slot2"  kind="a/o"  num="1"  role="to whom"  class_constraint="Human"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1178329944109_s4" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="nationality"  class_constraint="#Country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="#Country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1178355851625_s5" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="to whom"  class_constraint="Human"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1178355851625_rc7" label="Same" ><POS x="582" y="457"/>
+<ARC label="any">Foreigner situation1$slot2</ARC>
+<ARC label="any">Foreigner situation1$slot%slot2</ARC>
+</R_CONST>
+<R_CONST id="1180178797687_rc7" label="different" ><POS x="587" y="386"/>
+<ARC label="any">Foreigner situation1$slot%slot2%slot</ARC>
+<ARC label="any">Foreigner situation1$slot%Human:slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1178329944109_n6" >
+<LABEL>Home country1</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="374" y="120"/>
+<SLOTS>
+<SLOT id="1178329944109_s7" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="home country"  class_constraint="Country"  rh_name="Home country"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1178329944109_s8" 
+ type="R2-1"  label="slot"  kind="a/o"  num="1"  role="me"  class_constraint="Human"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="Country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1178329944109_rc9" label="Live in" ><POS x="653" y="187"/>
+<ARC label="human">Home country1$slot%slot</ARC>
+<ARC label="country">Home country1$slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1178329944109_n10" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="46" y="219"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1178329944109_n11" >
+<LABEL>Country</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="177" y="77"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1178329944109_n12" >
+<LABEL>Human</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="181" y="135"/>
+<SLOTS>
+<SLOT id="1180178797687_s15" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="nationality"  class_constraint="#Country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="#Country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1178329944109_n13" >
+<LABEL>Foreigner situation2</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="188" y="488"/>
+<SLOTS>
+<SLOT id="1178329944109_s14" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="foreigner role"  class_constraint="Human"  rh_name="Foreigner-C"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1180178797687_s18" 
+ type="R2-2"  label="Human:slot"  kind="a/o"  num="1"  role="nationality"  class_constraint="#Country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="Human$slot"/>
+<SUB_L label="" def="" role_name="" class_const="#Country" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1178329944109_s16" 
+ type="R2-1"  label="slot2"  kind="a/o"  num="1"  role="to country"  class_constraint="Focused country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="#Focused country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="slot" def="" role_name="foreigner" class_const="Human" rh_name ="Foreigner" value ="" />
+</SLOT>
+<SLOT id="1178355851625_s19" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="to country"  class_constraint="Focused country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="#Focused country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1178355851625_rc21" label="Same" ><POS x="470" y="667"/>
+<ARC label="any">Foreigner situation2$slot2</ARC>
+<ARC label="any">Foreigner situation2$slot%slot2</ARC>
+</R_CONST>
+<R_CONST id="1180178797687_rc22" label="different" ><POS x="500" y="571"/>
+<ARC label="any">Foreigner situation2$slot%slot2</ARC>
+<ARC label="any">Foreigner situation2$slot%Human:slot</ARC>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="Foreigner situation 1" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1178329944109_n18" >
+<LABEL>Country of interest</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="374" y="52"/>
+<SLOTS>
+<SLOT id="1178329944109_s19" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="country"  class_constraint="Country"  rh_name="Focused country"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1178329944109_n20" >
+<LABEL>Foreigner situation3</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="95" y="685"/>
+<SLOTS>
+<SLOT id="1178329944109_s21" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="foreigner role"  class_constraint="Human"  rh_name="Foreigner-HC"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1180178797687_s27" 
+ type="R1"  label="Human:slot"  kind="a/o"  num="1"  role="nationality"  class_constraint="#Country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="Human$slot"/>
+<SUB_L label="" def="" role_name="" class_const="#Country" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1178329944109_s23" 
+ type="R2-1"  label="slot2"  kind="a/o"  num="1"  role="to country"  class_constraint="Home country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="slot2" def="" role_name="to country" class_const="#Home country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="slot" def="" role_name="foreigner" class_const="Human" rh_name ="Foreigner" value ="" />
+</SLOT>
+<SLOT id="1178355851625_s28" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="to country"  class_constraint="Home country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="#Home country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1178355851625_rc30" label="Same" ><POS x="386" y="836"/>
+<ARC label="any">Foreigner situation3$slot2</ARC>
+<ARC label="any">Foreigner situation3$slot%slot2</ARC>
+</R_CONST>
+<R_CONST id="1180178797687_rc31" label="different" ><POS x="403" y="763"/>
+<ARC label="any">Foreigner situation3$slot%slot2</ARC>
+<ARC label="any">Foreigner situation3$slot%Human:slot</ARC>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="Foreigner situation 1" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1178355851625_n31" >
+<LABEL>Foreigner club in Japan</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="779" y="225"/>
+<SLOTS>
+<SLOT id="1178355851625_s32" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="member"  class_constraint="Foreigner-C"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="Foreigner club in a country$slot"/>
+<SLOTS>
+<SLOT id="1178355851625_s33" 
+ type="R2-2"  label="Foreigner-C:slot2"  kind="a/o"  num="1"  role="to country"  class_constraint="Focused country"  rh_name=""  value="Japan" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="Foreigner situation2$slot%slot2"/>
+<SUB_L label="" def="" role_name="" class_const="#Focused country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="Foreigner-C" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1178355851625_n34" >
+<LABEL>Foreigner club in a country</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="531" y="266"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1178355851625_s35" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="member"  class_constraint="Foreigner-C"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="slot" def="" role_name="member" class_const="Foreigner-C" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="Foreigner club in Japan" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<ISA id="1178329944109_isa25" parent="Any" child="Foreigner situation1" />
+<ISA id="1178329944109_isa26" parent="Any" child="Country" />
+<ISA id="1178329944109_isa27" parent="Any" child="Human" />
+<ISA id="1178329944109_isa28" parent="Any" child="Foreigner situation2" />
+<ISA id="1178329944109_isa29" parent="Country" child="Home country1" />
+<ISA id="1178329944109_isa30" parent="Country" child="Country of interest" />
+<ISA id="1178329944109_isa31" parent="Any" child="Foreigner situation3" />
+<ISA id="1178355851625_isa43" parent="Any" child="Foreigner club in a country" />
+<ISA id="1178355851625_isa44" parent="Foreigner club in a country" child="Foreigner club in Japan" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1178329944109_n32" >
+<LABEL>different</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="245" y="72"/>
+<SLOTS>
+<SLOT id="1178329944109_s33" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="any"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1178329944109_s34" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="any"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1178329944109_n35" >
+<LABEL>Live in</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="537" y="66"/>
+<SLOTS>
+<SLOT id="1178329944109_s36" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="human"  class_constraint="Human"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1178329944109_s37" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="country"  class_constraint="Country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1178355851625_n57" >
+<LABEL>Same</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="381" y="66"/>
+<SLOTS>
+<SLOT id="1178355851625_s58" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="any"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1178355851625_s59" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="any"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1180178797687_n55" >
+<LABEL>Foreigner relation</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="259" y="275"/>
+<SLOTS>
+<SLOT id="1180178797687_s56" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="Focused person role"  class_constraint="Human"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1180178797687_s57" 
+ type="R1"  label="Human:slot"  kind="a/o"  num="1"  role="nationality"  class_constraint="#Country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="Human$slot"/>
+<SUB_L label="" def="" role_name="" class_const="#Country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="slot" def="" role_name="注目されている人role" class_const="Human" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1180178797687_s59" 
+ type="NW"  label="slot2"  kind="p/i"  num="1.."  role="foreigner role"  class_constraint="Human"  rh_name="Foreigner-R"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SLOTS>
+<SLOT id="1180178797687_s60" 
+ type="R1"  label="Human:slot"  kind="a/o"  num="1"  role="nationality"  class_constraint="#Country"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="Human$slot"/>
+<SUB_L label="" def="" role_name="" class_const="#Country" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="slot2" def="" role_name="外国人role" class_const="Human" rh_name ="Foreigner-R" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1180178797687_rc61" label="different" ><POS x="644" y="394"/>
+<ARC label="any">Foreigner relation$slot2%Human:slot</ARC>
+<ARC label="any">Foreigner relation$slot%Human:slot</ARC>
+</R_CONST>
+</RELATIONS>
+<SUB_L label="外国人関係" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="594.7086614173228" h="841.6913385826772" iw="450.70866141732284" ih="697.6913385826772" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="KONICA MINOLTA PagePro 1350W" />
+</PRINTER>
+</OE_FILE>

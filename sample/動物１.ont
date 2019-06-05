@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="動物１.ont" ont_id="1188286175640ont"  author="kozaki" ontname="動物１" update="1188286175640" project="070829kisosemi">
+<FILENAME_ONT>動物１.ont</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1180992922128_n0" >
+<LABEL>生物</LABEL>
+<POS x="23" y="34"/>
+<SUB_TREE>open</SUB_TREE
+><RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n1" >
+<LABEL>動物</LABEL>
+<POS x="123" y="70"/>
+<SUB_TREE>open</SUB_TREE
+><RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n2" >
+<LABEL>植物</LABEL>
+<POS x="66" y="205"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n3" >
+<LABEL>脊椎動物</LABEL>
+<POS x="247" y="112"/>
+<SUB_TREE>open</SUB_TREE
+><RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n4" >
+<LABEL>無脊椎動物</LABEL>
+<POS x="156" y="259"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n5" >
+<LABEL>ほ乳類</LABEL>
+<POS x="450" y="93"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n6" >
+<LABEL>鳥類</LABEL>
+<POS x="443" y="164"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n7" >
+<LABEL>は虫類</LABEL>
+<POS x="428" y="232"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n8" >
+<LABEL>両生類</LABEL>
+<POS x="458" y="322"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1180992922128_n9" >
+<LABEL>魚類</LABEL>
+<POS x="410" y="385"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<ISA id="1180992922128_isa10" parent="生物" child="動物" />
+<ISA id="1180992922128_isa11" parent="生物" child="植物" />
+<ISA id="1180992922128_isa12" parent="動物" child="脊椎動物" />
+<ISA id="1180992922128_isa13" parent="動物" child="無脊椎動物" />
+<ISA id="1180992922128_isa14" parent="脊椎動物" child="ほ乳類" />
+<ISA id="1180992922128_isa15" parent="脊椎動物" child="鳥類" />
+<ISA id="1180992922128_isa16" parent="脊椎動物" child="は虫類" />
+<ISA id="1180992922128_isa17" parent="脊椎動物" child="両生類" />
+<ISA id="1180992922128_isa18" parent="脊椎動物" child="魚類" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+</R_CONCEPTS>
+<OTHER_ONTS>
+<W_DEPENDENCY>
+</W_DEPENDENCY>
+<R_DEPENDENCY>
+</R_DEPENDENCY>
+</OTHER_ONTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.1905511811024" h="841.9748031496063" iw="451.19055118110236" ih="697.9748031496063" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="Adobe PDF" />
+</PRINTER>
+</OE_FILE>

@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="(2)料理する（お好み焼きを作る）.xml" ont_id="1222326076191ont" >
+<FILENAME_ONT>(2)料理する（お好み焼きを作る）.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1196701323436_n0" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="20" y="144"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n1" >
+<LABEL>料理する</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="480" y="440"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n2" >
+<LABEL>お好み焼きを作る</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="593" y="432"/>
+<DEF>本当は，
+・肉をのせる
+・ソースを塗る
+・鰹節をかける
+も含めたいと思ったが，複雑になるので省略</DEF>
+<SLOTS>
+<SLOT id="1196701323436_s3" 
+ type="OR"  label="slot4"  kind="p/o"  num="1.."  role="部分行為"  class_constraint="切る"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="複合行為$slot"/>
+<SLOTS>
+<SLOT id="1196701323436_s4" 
+ type="R2-2"  label="切る:slot"  kind="p/o"  num="1"  role="入力物"  class_constraint="キャベツ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="切る$slot"/>
+<SUB_L label="" def="" role_name="" class_const="キャベツ" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s5" 
+ type="R2-2"  label="切る:slot2"  kind="p/o"  num="1"  role="出力物"  class_constraint="キャベツ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="切る$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="キャベツ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="切る" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s6" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="部分行為"  class_constraint="切る"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="複合行為$slot"/>
+<SLOTS>
+<SLOT id="1196701323436_s7" 
+ type="R2-2"  label="切る:slot"  kind="p/o"  num="1"  role="入力物"  class_constraint="ちくわ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="切る$slot"/>
+<SUB_L label="" def="" role_name="" class_const="ちくわ" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s8" 
+ type="R2-2"  label="切る:slot2"  kind="p/o"  num="1"  role="出力物"  class_constraint="ちくわ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="切る$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="ちくわ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="slot" def="" role_name="部分行為" class_const="切る" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s9" 
+ type="OR"  label="slot2"  kind="p/o"  num="1.."  role="部分行為"  class_constraint="混ぜる"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="複合行為$slot"/>
+<SLOTS>
+<SLOT id="1196701323436_s10" 
+ type="R2-2"  label="混ぜる:slot"  kind="p/o"  num="1"  role="入力物"  class_constraint="キャベツ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混ぜる$slot"/>
+<SUB_L label="" def="" role_name="" class_const="キャベツ" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s11" 
+ type="R2-2"  label="混ぜる:slot2"  kind="p/o"  num="1"  role="入力物"  class_constraint="ちくわ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混ぜる$slot"/>
+<SUB_L label="" def="" role_name="" class_const="ちくわ" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s12" 
+ type="R2-2"  label="混ぜる:slot3"  kind="p/o"  num="1"  role="入力物"  class_constraint="卵"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混ぜる$slot"/>
+<SUB_L label="" def="" role_name="" class_const="卵" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s13" 
+ type="OR"  label="混ぜる:slot4"  kind="p/o"  num="1"  role="入力物"  class_constraint="小麦粉"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混ぜる$slot"/>
+<SUB_L label="" def="" role_name="" class_const="小麦粉" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s14" 
+ type="OR"  label="混ぜる:slot5"  kind="p/o"  num="1"  role="入力物"  class_constraint="水"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混ぜる$slot"/>
+<SUB_L label="" def="" role_name="" class_const="水" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s15" 
+ type="OR"  label="混ぜる:slot22"  kind="p/o"  num="1"  role="出力物"  class_constraint="お好み焼きのもと"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<DEF>構成物のクラス制約と，sameAs関係は後で追加予定．</DEF>
+<PARENT_SLOT slot="混ぜる$slot2"/>
+<SLOTS>
+<SLOT id="1196701323436_s16" 
+ type="R2-2"  label="混合物:slot"  kind="p/o"  num="1"  role="構成物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混合物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s17" 
+ type="R2-2"  label="混合物:slot2"  kind="p/o"  num="1"  role="構成物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混合物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s18" 
+ type="OR"  label="混合物:slot3"  kind="p/o"  num="1"  role="構成物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混合物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s19" 
+ type="OR"  label="混合物:slot4"  kind="p/o"  num="1"  role="構成物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混合物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s20" 
+ type="OR"  label="混合物:slot5"  kind="p/o"  num="1"  role="構成物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="混合物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="お好み焼きのもと" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="混ぜる" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s21" 
+ type="OR"  label="slot3"  kind="p/o"  num="1.."  role="部分行為"  class_constraint="焼く"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="複合行為$slot"/>
+<SLOTS>
+<SLOT id="1196701323436_s22" 
+ type="R2-2"  label="焼く:slot"  kind="p/o"  num="1.."  role="入力物"  class_constraint="お好み焼きのもと"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="焼く$slot"/>
+<SLOTS>
+<SLOT id="1222326076191_s23" 
+ type="R2-2"  label="slot2"  kind="a/o"  num="1"  role="焼き具合"  class_constraint="生"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="もの$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="生" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="お好み焼きのもと" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s23" 
+ type="R2-2"  label="焼く:slot2"  kind="p/o"  num="1.."  role="出力物"  class_constraint="お好み焼きのもと"  rh_name="お好み焼き"  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="焼く$slot2"/>
+<SLOTS>
+<SLOT id="1222326076191_s25" 
+ type="R2-2"  label="slot2"  kind="a/o"  num="1"  role="焼き具合"  class_constraint="焼け状態"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="もの$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="焼け状態" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="お好み焼きのもと" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="焼く" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196701323436_rc24" label="時間前後関係" ><POS x="903" y="606"/>
+<ARC label="前">お好み焼きを作る$slot</ARC>
+<ARC label="後">お好み焼きを作る$slot2</ARC>
+</R_CONST>
+<R_CONST id="1196701323436_rc25" label="時間前後関係" ><POS x="896" y="827"/>
+<ARC label="前">お好み焼きを作る$slot2</ARC>
+<ARC label="後">お好み焼きを作る$slot3</ARC>
+</R_CONST>
+<R_CONST id="1196701323436_rc26" label="時間前後関係" ><POS x="872" y="532"/>
+<ARC label="前">お好み焼きを作る$slot4</ARC>
+<ARC label="後">お好み焼きを作る$slot2</ARC>
+</R_CONST>
+<R_CONST id="1197296060000_rc27" label="sameAs" ><POS x="907" y="668"/>
+<ARC label="class">お好み焼きを作る$slot4%切る:slot2</ARC>
+<ARC label="class">お好み焼きを作る$slot2%混ぜる:slot</ARC>
+</R_CONST>
+<R_CONST id="1197296060000_rc28" label="sameAs" ><POS x="856" y="704"/>
+<ARC label="class">お好み焼きを作る$slot%切る:slot2</ARC>
+<ARC label="class">お好み焼きを作る$slot2%混ぜる:slot2</ARC>
+</R_CONST>
+<R_CONST id="1222326076191_rc31" label="sameAs" ><POS x="848" y="831"/>
+<ARC label="class">お好み焼きを作る$slot2%混ぜる:slot</ARC>
+<ARC label="class">お好み焼きを作る$slot2%混ぜる:slot22%混合物:slot</ARC>
+</R_CONST>
+<R_CONST id="1222326076191_rc32" label="sameAs" ><POS x="913" y="1078"/>
+<ARC label="class">お好み焼きを作る$slot2%混ぜる:slot22</ARC>
+<ARC label="class">お好み焼きを作る$slot3%焼く:slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n29" >
+<LABEL>行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="112" y="164"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196701323436_s30" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="行為主体"  class_constraint="人"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="人" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s31" 
+ type="NW"  label="slot3"  kind="p/o"  num="1"  role="使用道具"  class_constraint="道具"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="道具" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n32" >
+<LABEL>他動詞行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="424" y="124"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196701323436_s33" 
+ type="NW"  label="slot"  kind="p/o"  num="0.."  role="入力物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s34" 
+ type="NW"  label="slot2"  kind="p/o"  num="0.."  role="出力物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n35" >
+<LABEL>複合行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="258" y="336"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196701323436_s36" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="部分行為"  class_constraint="単純行為"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<DEF>行為とする方がよい？</DEF>
+<SUB_L label="" def="" role_name="" class_const="単純行為" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n37" >
+<LABEL>切る</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="672" y="0"/>
+<SLOTS>
+<SLOT id="1196701323436_s38" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="入力物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="他動詞行為$slot"/>
+<SLOTS>
+<SLOT id="1196701323436_s39" 
+ type="R2-2"  label="もの:slot"  kind="a/o"  num="1"  role="形状"  class_constraint="固まり"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="もの$slot"/>
+<SUB_L label="" def="" role_name="" class_const="固まり" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s40" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="出力物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="他動詞行為$slot2"/>
+<SLOTS>
+<SLOT id="1196701323436_s41" 
+ type="R2-2"  label="もの:slot"  kind="a/o"  num="1"  role="形状"  class_constraint="断片"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="もの$slot"/>
+<SUB_L label="" def="" role_name="" class_const="断片" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1197296060000_rc42" label="sameAs" ><POS x="946" y="96"/>
+<ARC label="class">切る$slot</ARC>
+<ARC label="class">切る$slot2</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n43" >
+<LABEL>人</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="254" y="472"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n44" >
+<LABEL>混ぜる</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="692" y="164"/>
+<SLOTS>
+<SLOT id="1196701323436_s45" 
+ type="OR"  label="slot"  kind="p/o"  num="2.."  role="入力物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="他動詞行為$slot"/>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s46" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="出力物"  class_constraint="混合物"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="他動詞行為$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="混合物" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1196701724000_rc47" label="包含関係" ><POS x="951" y="207"/>
+<ARC label="全体物">混ぜる$slot2</ARC>
+<ARC label="構成物">混ぜる$slot</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n48" >
+<LABEL>焼く</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="684" y="268"/>
+<DEF>焼けると名前が変わるので，sameAsとするとおかしくなる？
+→madeByなどにする？</DEF>
+<SLOTS>
+<SLOT id="1196701323436_s49" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="入力物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="他動詞行為$slot"/>
+<SLOTS>
+<SLOT id="1196701323436_s50" 
+ type="R2-2"  label="もの:slot2"  kind="a/o"  num="1"  role="焼き具合"  class_constraint="生"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="もの$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="生" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s51" 
+ type="OR"  label="slot2"  kind="p/o"  num="1.."  role="出力物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="他動詞行為$slot2"/>
+<SLOTS>
+<SLOT id="1196701323436_s52" 
+ type="R2-2"  label="もの:slot2"  kind="a/o"  num="1"  role="焼き具合"  class_constraint="焼け状態"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="もの$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="焼け状態" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+<R_CONST id="1197296060000_rc53" label="sameAs" ><POS x="906" y="348"/>
+<ARC label="class">焼く$slot</ARC>
+<ARC label="class">焼く$slot2</ARC>
+</R_CONST>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n54" >
+<LABEL>調理器具</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="380" y="676"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n55" >
+<LABEL>フライパン</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="534" y="672"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n56" >
+<LABEL>包丁</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="530" y="736"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n57" >
+<LABEL>道具</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="308" y="672"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n58" >
+<LABEL>もの</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="158" y="532"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196701323436_s59" 
+ type="NW"  label="slot"  kind="a/o"  num="0..1"  role="形状"  class_constraint="形状"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="形状" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s60" 
+ type="NW"  label="slot2"  kind="a/o"  num="0..1"  role="焼き具合"  class_constraint="焼き具合"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="焼き具合" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n61" >
+<LABEL>単純行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="284" y="172"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n62" >
+<LABEL>自動詞行為</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="400" y="260"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n63" >
+<LABEL>待つ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="508" y="300"/>
+<SLOTS>
+<SLOT id="1196701323436_s64" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="開始時間"  class_constraint="時間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="時間" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s65" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="終了時間"  class_constraint="時間"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="時間" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n66" >
+<LABEL>属性</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="68" y="740"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n67" >
+<LABEL>形状</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="120" y="768"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n68" >
+<LABEL>固まり</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="216" y="816"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n69" >
+<LABEL>断片</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="184" y="856"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n70" >
+<LABEL>混合物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="316" y="524"/>
+<SUB_TREE>open</SUB_TREE>
+<DEF>本当は構成物の間の関係性をきちんと定義する必要があるが，ここでは省略．</DEF>
+<SLOTS>
+<SLOT id="1196701323436_s71" 
+ type="NW"  label="slot"  kind="p/o"  num="2.."  role="構成物"  class_constraint="もの"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="もの" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n72" >
+<LABEL>焼き具合</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="56" y="886"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n73" >
+<LABEL>生</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="154" y="976"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n74" >
+<LABEL>半生</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="140" y="1020"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n75" >
+<LABEL>焼け状態</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="92" y="1064"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n76" >
+<LABEL>お好み焼きのもと</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="440" y="502"/>
+<DEF>これはロール概念にすべき？
+→ロールの詳しい説明はまだしていないので，ここでは基本概念化しておく．
+スロットは，後から修正予定．
+
+焼けたら「お好み焼き」になるので「元」は不要？</DEF>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745366000_n77" >
+<LABEL>時間</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="76" y="92"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745366000_n78" >
+<LABEL>食材</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="272" y="902"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="食材" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n79" >
+<LABEL>粉類</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="420" y="918"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="粉類" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n80" >
+<LABEL>パン粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="620" y="924"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="パン粉" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n81" >
+<LABEL>小麦粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="600" y="972"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="小麦粉" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n82" >
+<LABEL>から揚げ粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="580" y="864"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="から揚げ粉" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n83" >
+<LABEL>肉類</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="444" y="964"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="肉類" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n84" >
+<LABEL>豚肉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="492" y="992"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="豚肉" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n85" >
+<LABEL>魚介類</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="368" y="1012"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="魚介類" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n86" >
+<LABEL>魚</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="448" y="1056"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="魚" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n87" >
+<LABEL>貝</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="400" y="1096"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="貝" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n88" >
+<LABEL>野菜</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="404" y="860"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="野菜" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1196745366000_n89" >
+<LABEL>キャベツ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="464" y="828"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745366000_n90" >
+<LABEL>加工品</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="332" y="1128"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745366000_n91" >
+<LABEL>ちくわ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="412" y="1176"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745366000_n92" >
+<LABEL>水</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="248" y="1100"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745366000_n93" >
+<LABEL>卵</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="268" y="1144"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<ISA id="1196701323436_isa77" parent="料理する" child="お好み焼きを作る" />
+<ISA id="1196701323436_isa78" parent="Any" child="行為" />
+<ISA id="1196701323436_isa79" parent="行為" child="複合行為" />
+<ISA id="1196701323436_isa80" parent="複合行為" child="料理する" />
+<ISA id="1196701323436_isa81" parent="他動詞行為" child="切る" />
+<ISA id="1196701323436_isa82" parent="他動詞行為" child="混ぜる" />
+<ISA id="1196701323436_isa83" parent="他動詞行為" child="焼く" />
+<ISA id="1196701323436_isa84" parent="調理器具" child="フライパン" />
+<ISA id="1196701323436_isa85" parent="調理器具" child="包丁" />
+<ISA id="1196701323436_isa86" parent="道具" child="調理器具" />
+<ISA id="1196701323436_isa87" parent="Any" child="もの" />
+<ISA id="1196701323436_isa88" parent="もの" child="人" />
+<ISA id="1196701323436_isa89" parent="もの" child="道具" />
+<ISA id="1196701323436_isa90" parent="行為" child="単純行為" />
+<ISA id="1196701323436_isa91" parent="単純行為" child="他動詞行為" />
+<ISA id="1196701323436_isa92" parent="単純行為" child="自動詞行為" />
+<ISA id="1196701323436_isa93" parent="自動詞行為" child="待つ" />
+<ISA id="1196701323436_isa94" parent="Any" child="属性" />
+<ISA id="1196701323436_isa95" parent="属性" child="形状" />
+<ISA id="1196701323436_isa96" parent="形状" child="固まり" />
+<ISA id="1196701323436_isa97" parent="形状" child="断片" />
+<ISA id="1196701323436_isa98" parent="もの" child="混合物" />
+<ISA id="1196701323436_isa99" parent="属性" child="焼き具合" />
+<ISA id="1196701323436_isa100" parent="焼き具合" child="生" />
+<ISA id="1196701323436_isa101" parent="焼き具合" child="半生" />
+<ISA id="1196701323436_isa102" parent="焼き具合" child="焼け状態" />
+<ISA id="1196701323436_isa103" parent="混合物" child="お好み焼きのもと" />
+<ISA id="1196745366000_isa121" parent="Any" child="時間" />
+<ISA id="1196745366000_isa122" parent="食材" child="粉類" />
+<ISA id="1196745366000_isa123" parent="粉類" child="パン粉" />
+<ISA id="1196745366000_isa124" parent="粉類" child="小麦粉" />
+<ISA id="1196745366000_isa125" parent="粉類" child="から揚げ粉" />
+<ISA id="1196745366000_isa126" parent="食材" child="肉類" />
+<ISA id="1196745366000_isa127" parent="肉類" child="豚肉" />
+<ISA id="1196745366000_isa128" parent="食材" child="魚介類" />
+<ISA id="1196745366000_isa129" parent="魚介類" child="魚" />
+<ISA id="1196745366000_isa130" parent="魚介類" child="貝" />
+<ISA id="1196745366000_isa131" parent="食材" child="野菜" />
+<ISA id="1196745366000_isa132" parent="もの" child="食材" />
+<ISA id="1196745366000_isa133" parent="野菜" child="キャベツ" />
+<ISA id="1196745366000_isa134" parent="食材" child="加工品" />
+<ISA id="1196745366000_isa135" parent="加工品" child="ちくわ" />
+<ISA id="1196745366000_isa136" parent="食材" child="水" />
+<ISA id="1196745366000_isa137" parent="食材" child="卵" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2000" h="3000" />
+<CONCEPT id="1196701323436_n104" >
+<LABEL>時間前後関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="260" y="40"/>
+<SLOTS>
+<SLOT id="1196701323436_s105" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="前"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s106" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="後"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+<CONCEPT id="1196701323436_n107" >
+<LABEL>包含関係</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="228" y="192"/>
+<SLOTS>
+<SLOT id="1196701323436_s108" 
+ type="NW"  label="slot"  kind="p/i"  num="1"  role="全体物"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196701323436_s109" 
+ type="NW"  label="slot2"  kind="p/i"  num="1"  role="構成物"  class_constraint="Any"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="Any" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+</CONCEPT>
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.1905511811024" h="841.8047244094488" iw="451.19055118110236" ih="697.8047244094488" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="HP psc 2400 Series" />
+</PRINTER>
+</OE_FILE>

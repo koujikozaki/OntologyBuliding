@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="(1)料理-動的用.xml" ont_id="1222317194002ont" >
+<FILENAME_ONT>(1)料理-動的用.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2064" h="3084" />
+<CONCEPT id="1196693012664_n0" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="17" y="649"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n1" >
+<LABEL>揚げ物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="217" y="325"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196693012664_s2" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="材料"  class_constraint="食材"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="食材" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196693012664_s3" 
+ type="NW"  label="slot2"  kind="p/o"  num="1.."  role="具"  class_constraint="食材"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="食材" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745372000_s4" 
+ type="OR"  label="slot3"  kind="a/o"  num="1"  role="調理法"  class_constraint="揚げる"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="揚げる" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n4" >
+<LABEL>フライ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="435" y="335"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196693012664_s5" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="材料"  class_constraint="パン粉"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="揚げ物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="パン粉" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n6" >
+<LABEL>てんぷら</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="436" y="420"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196693012664_s7" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="材料"  class_constraint="小麦粉"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="揚げ物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="小麦粉" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196693012664_s8" 
+ type="OR"  label="slot2"  kind="a/o"  num="1"  role="国籍"  class_constraint="日本"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日本" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n9" >
+<LABEL>食材</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="385" y="893"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n10" >
+<LABEL>粉類</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="536" y="904"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n11" >
+<LABEL>パン粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="677" y="897"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n12" >
+<LABEL>小麦粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="660" y="945"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n13" >
+<LABEL>魚フライ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="680" y="232"/>
+<SLOTS>
+<SLOT id="1196693012664_s14" 
+ type="OR"  label="slot2"  kind="p/o"  num="1.."  role="材料"  class_constraint="魚"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="揚げ物$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="魚" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n15" >
+<LABEL>肉類</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="504" y="936"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n16" >
+<LABEL>魚介類</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="425" y="984"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n17" >
+<LABEL>魚</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="505" y="1029"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n18" >
+<LABEL>貝</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="460" y="1069"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n19" >
+<LABEL>魚てんぷら</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="681" y="529"/>
+<SLOTS>
+<SLOT id="1196916386000_s21" 
+ type="OR"  label="slot2"  kind="p/o"  num="1.."  role="材料"  class_constraint="魚"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="揚げ物$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="魚" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n20" >
+<LABEL>料理</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="48" y="361"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196693012664_s21" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="材料"  class_constraint="食材"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="食材" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196693012664_s22" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="国籍"  class_constraint="地域"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<SUB_L label="" def="" role_name="" class_const="地域" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745372000_s24" 
+ type="NW"  label="slot3"  kind="a/o"  num="1"  role="調理法"  class_constraint="調理法"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="調理法" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n23" >
+<LABEL>地域</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="170" y="878"/>
+<PART_TREE>close</PART_TREE>
+<SUB_TREE>open</SUB_TREE>
+<DEF>厳密には，p-オペレータの問題になる．
+ここでは，属性として使うために簡単化して導入している．
+→これにより，日本料理，中華料理，洋食を表すことができる．</DEF>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n24" >
+<LABEL>日本</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="288" y="873"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n25" >
+<LABEL>西洋</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="288" y="917"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n26" >
+<LABEL>中国</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="277" y="956"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n27" >
+<LABEL>唐揚げ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="685" y="414"/>
+<SLOTS>
+<SLOT id="1196693012664_s28" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="材料"  class_constraint="から揚げ粉"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="揚げ物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="から揚げ粉" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196693012664_s29" 
+ type="OR"  label="slot2"  kind="a/o"  num="1"  role="国籍"  class_constraint="中国"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="中国" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n30" >
+<LABEL>汁物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="221" y="480"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196693012664_s31" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="材料"  class_constraint="液体"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<DEF>スープを材料にするかは微妙</DEF>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="液体" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196693012664_s32" 
+ type="NW"  label="slot2"  kind="p/o"  num="1.."  role="材料"  class_constraint="食材"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<DEF>揚げ物と「具」と汁物の「具」は別の概念
+→本当はロール概念名を変えるべき</DEF>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="食材" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745372000_s35" 
+ type="OR"  label="slot3"  kind="a/o"  num="1"  role="調理法"  class_constraint="煮る"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="煮る" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n33" >
+<LABEL>味噌汁</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="428" y="524"/>
+<SLOTS>
+<SLOT id="1196693012664_s34" 
+ type="OR"  label="slot"  kind="p/o"  num="1"  role="材料"  class_constraint="水"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="汁物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="水" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n35" >
+<LABEL>シチュー</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="448" y="661"/>
+<SLOTS>
+<SLOT id="1196693012664_s36" 
+ type="NW"  label="slot"  kind="a/o"  num="1"  role="国籍"  class_constraint="西洋"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="料理$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="西洋" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1222317074780_s41" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="スープ"  class_constraint="牛乳"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="汁物$slot"/>
+<SUB_L label="" def="" role_name="" class_const="牛乳" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n37" >
+<LABEL>地域別料理分類</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="90" y="1226"/>
+<SUB_TREE>open</SUB_TREE>
+<DEF>分類のために導入した概念</DEF>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n38" >
+<LABEL>和食</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="190" y="1281"/>
+<SLOTS>
+<SLOT id="1196693012664_s39" 
+ type="OR"  label="slot2"  kind="a/o"  num="1"  role="国籍"  class_constraint="日本"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日本" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n40" >
+<LABEL>材料別料理分類</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="108" y="1100"/>
+<SUB_TREE>open</SUB_TREE>
+<DEF>分類のために導入した概念</DEF>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196693012664_n41" >
+<LABEL>肉料理</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="252" y="1161"/>
+<SLOTS>
+<SLOT id="1196693012664_s42" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="材料"  class_constraint="肉類"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="肉類" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n46" >
+<LABEL>とんかつ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="680" y="320"/>
+<SLOTS>
+<SLOT id="1196745372000_s47" 
+ type="OR"  label="slot2"  kind="p/o"  num="1.."  role="材料"  class_constraint="豚肉"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="揚げ物$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="豚肉" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n48" >
+<LABEL>豚肉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="552" y="964"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n49" >
+<LABEL>調理法</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="140" y="661"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n50" >
+<LABEL>加熱</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="244" y="656"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n51" >
+<LABEL>乾燥</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="232" y="704"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n52" >
+<LABEL>生</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="228" y="761"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n53" >
+<LABEL>揚げる</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="320" y="669"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n54" >
+<LABEL>焼く</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="321" y="709"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n55" >
+<LABEL>蒸す</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="309" y="744"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n56" >
+<LABEL>煮る</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="276" y="773"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n57" >
+<LABEL>生もの</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="214" y="236"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1196745372000_s58" 
+ type="OR"  label="slot3"  kind="a/o"  num="1"  role="調理法"  class_constraint="生"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot3"/>
+<SUB_L label="" def="" role_name="" class_const="生" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n59" >
+<LABEL>刺身</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="430" y="109"/>
+<SLOTS>
+<SLOT id="1196745372000_s60" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="材料"  class_constraint="魚介類"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="魚介類" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1196745372000_s61" 
+ type="OR"  label="slot2"  kind="a/o"  num="1"  role="国籍"  class_constraint="日本"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="日本" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n62" >
+<LABEL>サラダ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="401" y="222"/>
+<SLOTS>
+<SLOT id="1196745372000_s63" 
+ type="OR"  label="slot"  kind="p/o"  num="1.."  role="材料"  class_constraint="野菜"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PART_TREE>close</PART_TREE>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="野菜" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1283746452000_s66" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="依存先"  class_constraint="フライ"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="フライ" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n64" >
+<LABEL>野菜</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="485" y="828"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1196745372000_n65" >
+<LABEL>から揚げ粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="640" y="836"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1222317074780_n68" >
+<LABEL>液体</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="361" y="1020"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1222317074780_n69" >
+<LABEL>水</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="408" y="1085"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1222317074780_n70" >
+<LABEL>牛乳</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="317" y="1080"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<CONCEPT id="1222326078533_n88" >
+<LABEL>NEW_3</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="292" y="1764"/>
+<RELATIONS>
+</RELATIONS>
+</CONCEPT>
+<ISA id="1196693012664_isa43" parent="揚げ物" child="フライ" />
+<ISA id="1196693012664_isa44" parent="揚げ物" child="てんぷら" />
+<ISA id="1196693012664_isa45" parent="食材" child="粉類" />
+<ISA id="1196693012664_isa46" parent="粉類" child="パン粉" />
+<ISA id="1196693012664_isa47" parent="粉類" child="小麦粉" />
+<ISA id="1196693012664_isa48" parent="フライ" child="魚フライ" />
+<ISA id="1196693012664_isa49" parent="食材" child="肉類" />
+<ISA id="1196693012664_isa50" parent="食材" child="魚介類" />
+<ISA id="1196693012664_isa51" parent="魚介類" child="魚" />
+<ISA id="1196693012664_isa52" parent="魚介類" child="貝" />
+<ISA id="1196693012664_isa53" parent="てんぷら" child="魚てんぷら" />
+<ISA id="1196693012664_isa54" parent="料理" child="揚げ物" />
+<ISA id="1196693012664_isa55" parent="地域" child="日本" />
+<ISA id="1196693012664_isa56" parent="地域" child="西洋" />
+<ISA id="1196693012664_isa57" parent="地域" child="中国" />
+<ISA id="1196693012664_isa59" parent="料理" child="汁物" />
+<ISA id="1196693012664_isa60" parent="汁物" child="味噌汁" />
+<ISA id="1196693012664_isa61" parent="汁物" child="シチュー" />
+<ISA id="1196693012664_isa62" parent="料理" child="地域別料理分類" />
+<ISA id="1196693012664_isa63" parent="地域別料理分類" child="和食" />
+<ISA id="1196693012664_isa64" parent="料理" child="材料別料理分類" />
+<ISA id="1196693012664_isa65" parent="材料別料理分類" child="肉料理" />
+<ISA id="1196693012664_isa66" parent="Any" child="料理" />
+<ISA id="1196693012664_isa67" parent="Any" child="食材" />
+<ISA id="1196745372000_isa91" parent="Any" child="地域" />
+<ISA id="1196745372000_isa92" parent="フライ" child="とんかつ" />
+<ISA id="1196745372000_isa93" parent="肉類" child="豚肉" />
+<ISA id="1196745372000_isa94" parent="Any" child="調理法" />
+<ISA id="1196745372000_isa95" parent="調理法" child="加熱" />
+<ISA id="1196745372000_isa96" parent="調理法" child="乾燥" />
+<ISA id="1196745372000_isa97" parent="調理法" child="生" />
+<ISA id="1196745372000_isa98" parent="加熱" child="揚げる" />
+<ISA id="1196745372000_isa99" parent="加熱" child="焼く" />
+<ISA id="1196745372000_isa100" parent="加熱" child="蒸す" />
+<ISA id="1196745372000_isa101" parent="加熱" child="煮る" />
+<ISA id="1196745372000_isa102" parent="料理" child="生もの" />
+<ISA id="1196745372000_isa103" parent="生もの" child="刺身" />
+<ISA id="1196745372000_isa104" parent="生もの" child="サラダ" />
+<ISA id="1196745372000_isa105" parent="食材" child="野菜" />
+<ISA id="1196745372000_isa106" parent="粉類" child="から揚げ粉" />
+<ISA id="1196901109995_isa106" parent="フライ" child="唐揚げ" />
+<ISA id="1222317074780_isa112" parent="食材" child="液体" />
+<ISA id="1222317074780_isa113" parent="液体" child="水" />
+<ISA id="1222317074780_isa114" parent="液体" child="牛乳" />
+<ISA id="1222668126000_isa116" parent="Any" child="NEW_3" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2064" h="3084" />
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.1905511811024" h="841.8047244094488" iw="451.19055118110236" ih="697.8047244094488" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="HP psc 2400 Series" />
+</PRINTER>
+</OE_FILE>

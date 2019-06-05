@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE_INS filename="ロールの例（インスタンス）.xml" ontology_file="ロールの例（インスタンス生成用）.xml">
+<BASE_ONTLOGY>ロールの例（インスタンス生成用）.xml</BASE_ONTLOGY>
+<FILENAME_INS>ロールの例（インスタンス）.xml</FILENAME_INS>
+<INSTANCES>
+<INSTANCE class="人間">
+<LABEL>人間_3</LABEL>
+<POS x="458" y="67"/>
+<SUB_L label="人間_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="人間">
+<LABEL>人間_1</LABEL>
+<POS x="457" y="137"/>
+<SUB_L label="人間_Ins" />
+</INSTANCE>
+<INSTANCE class="エンジン">
+<LABEL>エンジン_1</LABEL>
+<POS x="372" y="102"/>
+<SUB_L label="エンジン_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="ハンドル">
+<LABEL>ハンドル_1</LABEL>
+<POS x="289" y="101"/>
+<SUB_L label="ハンドル_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="人間">
+<LABEL>人間_2</LABEL>
+<POS x="196" y="198"/>
+<SUB_L label="人間_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="もの">
+<LABEL>もの_1</LABEL>
+<POS x="194" y="243"/>
+<SUB_L label="もの_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="人間">
+<LABEL>人間_5</LABEL>
+<POS x="168" y="130"/>
+<SUB_L label="人間_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="人間">
+<LABEL>人間_6</LABEL>
+<POS x="168" y="143"/>
+<SUB_L label="人間_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="人間">
+<LABEL>山田花子</LABEL>
+<POS x="168" y="178"/>
+<SUB_L label="人間_Ins" />
+</INSTANCE>
+<INSTANCE class="人間">
+<LABEL>山田一郎</LABEL>
+<POS x="168" y="213"/>
+<SUB_L label="人間_Ins" />
+</INSTANCE>
+<INSTANCE class="自転車">
+<LABEL>自転車_1</LABEL>
+<POS x="251" y="565"/>
+<SLOTS>
+<SLOT type="OR" label="slot1" kind="p/o" num="1" role="操作者ロール" class_constraint="人間" rh_name="こぎ手" value="人間_2">
+<POS x="301" y="565"/>
+<PARENT_SLOT slot="自転車$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="OR" label="slot2" kind="p/o" num="1" role="動力源ロール" class_constraint="もの" rh_name="人間" value="もの_1">
+<POS x="301" y="565"/>
+<PARENT_SLOT slot="自転車$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot3" kind="p/o" num="1" role="ハンドル" class_constraint="ハンドル" rh_name="" value="ハンドル_1">
+<POS x="301" y="565"/>
+<PARENT_SLOT slot="自転車$slot3" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="自転車_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="学校">
+<LABEL>大阪高校</LABEL>
+<POS x="51" y="262"/>
+<SLOTS>
+<SLOT type="NW" label="slot1" kind="p/o" num="1.." role="教師ロール" class_constraint="人間" rh_name="教師" value="山田太郎">
+<POS x="89" y="297"/>
+<PARENT_SLOT slot="学校$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot2" kind="p/o" num="1.." role="学生ロール" class_constraint="人間" rh_name="学生" value="人間_5">
+<POS x="89" y="332"/>
+<PARENT_SLOT slot="学校$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+</SLOTS>
+<SUB_L label="学校_Ins" />
+</INSTANCE>
+<INSTANCE class="家族">
+<LABEL>山田家</LABEL>
+<POS x="367" y="225"/>
+<SLOTS>
+<SLOT type="NW" label="slot1" kind="p/o" num="1" role="父親ロール" class_constraint="人間" rh_name="父親" value="山田太郎">
+<POS x="405" y="260"/>
+<PARENT_SLOT slot="家族$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot2" kind="p/o" num="1" role="母親ロール" class_constraint="人間" rh_name="母親" value="山田花子">
+<POS x="405" y="295"/>
+<PARENT_SLOT slot="家族$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="NW" label="slot3" kind="p/o" num="1.." role="子供ロール" class_constraint="人間" rh_name="子供" value="山田一郎">
+<POS x="405" y="330"/>
+<PARENT_SLOT slot="家族$slot3" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+</SLOTS>
+<SUB_L label="家族_Ins" />
+</INSTANCE>
+<INSTANCE class="人間">
+<LABEL>山田太郎</LABEL>
+<POS x="116" y="494"/>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="人間_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<INSTANCE class="自動車">
+<LABEL>自動車_1</LABEL>
+<POS x="255" y="437"/>
+<SLOTS>
+<SLOT type="OR" label="slot1" kind="p/o" num="1" role="操作者ロール" class_constraint="人間" rh_name="ドライバー" value="人間_3">
+<POS x="305" y="437"/>
+<PARENT_SLOT slot="自動車$slot" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+<SLOT type="OR" label="slot2" kind="p/o" num="1" role="動力源ロール" class_constraint="エンジン" rh_name="" value="エンジン_1">
+<POS x="305" y="437"/>
+<PARENT_SLOT slot="自動車$slot2" />
+<PART_TREE>close</PART_TREE>
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="自動車_Ins" />
+<PART_TREE>close</PART_TREE>
+</INSTANCE>
+<R_CONST label="所有関係">
+<POS x="197" y="533"/>
+<ARC_NODE role_name="所有者">山田太郎</ARC_NODE>
+<ARC_NODE role_name="所有物">自転車_1</ARC_NODE>
+<R_NODE class="所有関係">
+<SLOTS>
+<SLOT type="NW" label="slot" kind="p/i" num="1" role="所有者" class_constraint="人間" rh_name="" value="" />
+<SLOT type="NW" label="slot2" kind="p/i" num="1" role="所有物" class_constraint="もの" rh_name="" value="" />
+</SLOTS>
+</R_NODE>
+</R_CONST>
+<R_CONST label="所有関係">
+<POS x="209" y="476"/>
+<ARC_NODE role_name="所有者">山田太郎</ARC_NODE>
+<ARC_NODE role_name="所有物">自動車_1</ARC_NODE>
+<R_NODE class="所有関係">
+<SLOTS>
+<SLOT type="NW" label="slot" kind="p/i" num="1" role="所有者" class_constraint="人間" rh_name="" value="" />
+<SLOT type="NW" label="slot2" kind="p/i" num="1" role="所有物" class_constraint="もの" rh_name="" value="" />
+</SLOTS>
+</R_NODE>
+</R_CONST>
+</INSTANCES>
+</OE_FILE_INS>
