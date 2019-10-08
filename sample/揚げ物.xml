@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OE_FILE filename="サンプル揚げ物.xml" ont_id="1340073228594ont" >
+<FILENAME_ONT>サンプル揚げ物.xml</FILENAME_ONT>
+<W_CONCEPTS>
+<CANVAS_SIZE w="2403" h="3388" x="0" y="0" />
+<CONCEPT id="1340073228594_n0" >
+<LABEL>Any</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="12" y="76"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340073228594_n1" >
+<LABEL>揚げ物</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="241" y="108"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1340073290060_s2" 
+ type="NW"  label="slot"  kind="p/o"  num="1"  role="具"  class_constraint="食材"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="食材" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1340073290060_s3" 
+ type="NW"  label="slot2"  kind="p/o"  num="1"  role="衣"  class_constraint="粉"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot"/>
+<SUB_L label="" def="" role_name="" class_const="粉" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1340074010174_s4" 
+ type="NW"  label="slot3"  kind="a/o"  num="1"  role="調理法"  class_constraint="揚げる"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="料理$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="揚げる" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340073228594_n2" >
+<LABEL>からあげ</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="412" y="64"/>
+<SLOTS>
+<SLOT id="1340073410087_s5" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="衣"  class_constraint="唐揚げ粉"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="揚げ物$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="唐揚げ粉" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340073228594_n3" >
+<LABEL>てんぷら</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="420" y="164"/>
+<SLOTS>
+<SLOT id="1340073410087_s7" 
+ type="OR"  label="slot2"  kind="p/o"  num="1"  role="衣"  class_constraint="唐揚げ粉"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<PARENT_SLOT slot="揚げ物$slot2"/>
+<SUB_L label="" def="" role_name="" class_const="唐揚げ粉" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340073290060_n6" >
+<LABEL>料理</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="97" y="101"/>
+<SUB_TREE>open</SUB_TREE>
+<SLOTS>
+<SLOT id="1340073890145_s9" 
+ type="NW"  label="slot"  kind="p/o"  num="1.."  role="材料"  class_constraint="食材"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="食材" rh_name ="" value ="" />
+</SLOT>
+<SLOT id="1340074010174_s11" 
+ type="NW"  label="slot2"  kind="a/o"  num="1"  role="調理法"  class_constraint="調理法"  rh_name=""  value="" >
+<SUB_LABELS>
+</SUB_LABELS>
+<SUB_L label="" def="" role_name="" class_const="調理法" rh_name ="" value ="" />
+</SLOT>
+</SLOTS>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340073410087_n9" >
+<LABEL>食材</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="113" y="229"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340073410087_n10" >
+<LABEL>粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="236" y="268"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340073410087_n11" >
+<LABEL>小麦粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="356" y="272"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340073410087_n12" >
+<LABEL>唐揚げ粉</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="344" y="344"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340074010174_n16" >
+<LABEL>調理法</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="97" y="314"/>
+<SUB_TREE>open</SUB_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<CONCEPT id="1340074010174_n17" >
+<LABEL>揚げる</LABEL>
+<SUB_LABELS>
+</SUB_LABELS>
+<POS x="188" y="372"/>
+<PART_TREE>close</PART_TREE>
+<RELATIONS>
+</RELATIONS>
+<SUB_L label="" def="" role_name="" class_const="" rh_name ="" value ="" />
+</CONCEPT>
+<ISA id="1340073228594_isa5" parent="揚げ物" child="からあげ" />
+<ISA id="1340073228594_isa6" parent="揚げ物" child="てんぷら" />
+<ISA id="1340073290060_isa9" parent="Any" child="料理" />
+<ISA id="1340073290060_isa10" parent="料理" child="揚げ物" />
+<ISA id="1340073410087_isa17" parent="粉" child="小麦粉" />
+<ISA id="1340073410087_isa18" parent="粉" child="唐揚げ粉" />
+<ISA id="1340073410087_isa19" parent="食材" child="粉" />
+<ISA id="1340073410087_isa20" parent="Any" child="食材" />
+<ISA id="1340074010174_isa26" parent="Any" child="調理法" />
+<ISA id="1340074010174_isa27" parent="調理法" child="揚げる" />
+</W_CONCEPTS>
+<R_CONCEPTS>
+<CANVAS_SIZE w="2403" h="3388" />
+</R_CONCEPTS>
+<PRINTER>
+<PAGE_SETTINGS header="true" footer="true" cropmarks="true" scale="100" />
+<PAGE_FORMAT w="595.1905511811024" h="841.8047244094488" iw="451.19055118110236" ih="697.8047244094488" ix="72.0" iy="72.0" />
+<PRINTER_SETTINGS orientation="1" printername="Canon LBP5500 LIPS4" />
+</PRINTER>
+</OE_FILE>
